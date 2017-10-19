@@ -66,6 +66,7 @@
          -moz-transition: all 0.6s ease 0s;
          -o-transition: all 0.6s ease 0s;
          transition: all 0.6s ease 0s;
+         border-radius: 2em;
          }
          .member-photo:hover img {
          -webkit-transform: scale(1.2);
@@ -617,7 +618,7 @@
       <!--/#header-->
       <!-- acommodate timeline -->
       <section id="timeline">
-         <div id="tl1" class="tl-item col-sm-3 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="0ms">
+         <div id="tl1" class="tl-item col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="0ms">
             <div class="tl-bg" style="background-image: url(images/bg/digitalTouch.jpg)"></div>
             <div class="tl-year tl-year1" id="tl11">
                <p class="f2 heading--sanSerif">Our Philosophy</p>
@@ -636,7 +637,7 @@
                <a href="#blog" class="smoth-scroll media-408 hvr-icon-wobble-horizontal read-w3ls">Learn more</a>
             </div>
          </div>
-         <div id="tl3" class="tl-item col-sm-3 wow fadeInRight">
+         <div id="tl3" class="tl-item col-sm-4 wow fadeInRight">
             <div  class="tl-bg" style="background-image: url(images/bg/team.jpg)"></div>
             <div id="tl33" class="tl-year tl-year1">
                <p href="" class="smoth-scroll f2 heading--sanSerif">Team</p>
@@ -646,7 +647,7 @@
                <a href="#our-team" class="smoth-scroll media-408 hvr-icon-wobble-horizontal read-w3ls">Learn more</a>
             </div>
          </div>
-         <div id="tl4" class="tl-item col-sm-3 wow fadeInRight">
+         <div id="tl4" class="tl-item col-sm-4 wow fadeInRight">
             <div class="tl-bg" style="background-image: url(images/bg/valuesNTeam.jpg)"></div>
             <div id="tl44" class="tl-year tl-year1">
                <p class="f2 heading--sanSerif">Values</p>
@@ -658,7 +659,7 @@
          </div>
       </section>
       <!-- acommodate timeline ends-->
-      <section id="blog" class="padding-bottom" style="padding-top: 2%;">
+      <!-- <section id="blog" class="padding-bottom" style="padding-top: 2%;">
          <div class="container">
             <div class="row">
                <div class="col-sm-12">
@@ -833,7 +834,7 @@
                </div>
             </div>
          </div>
-      </section>
+      </section> -->
       <!--/#blog-->
       <!-- Start Our Team
          =========================================== -->
@@ -846,11 +847,7 @@
                   </div>
                </div>
             </div>
-            <div class="row">
-               <div class="col-md-1">
-                  <!-- Dummy team member -->
-               </div>
-               <!-- team member -->
+            <div class="row" style="margin-bottom: 4em;">
                <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="500ms">
                   <article class="team-mate">
                      <div class="member-photo">
@@ -861,39 +858,37 @@
                            </ul>
                         </div>
                      </div>
-                     <div class="member-title">
-                        <h4>Alok Nair</h4>
-                        <span>Founder</span>
-                     </div>
                   </article>
                </div>
-               <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="200ms">
-                  <article class="team-mate">
-                     <div class="member-photo">
-                        <img class="img-responsive" src="images/clients/gauravChattur.jpg" alt="Gaurav Chattur Advisor  &#38; Mentor for Digisquire">
-                        <div class="mask">
-                           <ul class="clearfix">
-                              <li><a target="_blank" href="https://www.linkedin.com/in/gauravchattur"><i class="fa fa-linkedin"></i></a></li>
-                           </ul>
-                        </div>
-                     </div>
-                     <div class="member-title">
-                        <h4>Gaurav Chattur</h4>
-                        <span>Advisor,Mentor</span>
-                     </div>
-                  </article>
+               <div class=" panel-text col-sm-7 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                   <h2 style="font-family: 'orbitron',sans-serif;font-size: 2em;color:#333;">Alok Nair</h2>
+                   <p style="font-family: 'orbitron',sans-serif;font-size: 1.1em;">Founder</p>
+                   <P style="font-family: 'Open Sans',sans-serif;text-align:justify;">Alok has 14 years of extensive experience in the IT industry having executed
+complex projects and built large teams ground up. Having worked in an Agile
+environment, he thoroughly understands the digital landscape and has a strong
+focus on helping customers succeed.</P>
                </div>
-               <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
-                  <article class="team-mate kill-margin-bottom">
-                     <div class="member-photo">
-                        <img class="img-responsive" src="images/clients/amitPokarna.jpg" alt="Amit Pokarna Co-Founder &#38; Advisor at Digisquire">
-                     </div>
-                     <div class="member-title">
-                        <h4>Amit Pokarna</h4>
-                        <span>Co-Founder,Advisor</span>
-                     </div>
-                  </article>
-               </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="200ms">
+                 <article class="team-mate">
+                    <div class="member-photo">
+                       <img class="img-responsive" src="images/clients/gauravChattur.jpg" alt="Gaurav Chattur Advisor  &#38; Mentor for Digisquire">
+                       <div class="mask">
+                          <ul class="clearfix">
+                             <li><a target="_blank" href="https://www.linkedin.com/in/gauravchattur"><i class="fa fa-linkedin"></i></a></li>
+                          </ul>
+                       </div>
+                    </div>
+                 </article>
+              </div>
+              <div class=" panel-text col-sm-7 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                  <h2 style="font-family: 'orbitron',sans-serif;font-size: 2em;color:#333;">Gaurav Chattur</h2>
+                  <p style="font-family: 'orbitron',sans-serif;font-size: 1.1em;">Advisor,Mentor</p>
+                  <P style="font-family: 'Open Sans',sans-serif;text-align:justify;">Gaurav is currently the MD (Asia-Pacific) of Catenon Worldwide, an Executive
+Search firm. An ISB grad, Gaurav brings with him an in depth understanding of
+business strategy, customer behaviour and management expertise.</P>
+              </div>
             </div>
          </div>
       </section>
