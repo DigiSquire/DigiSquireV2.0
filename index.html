@@ -28,341 +28,407 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
       <style media="screen">
-        /*custom hover effects*/
-        .custom-hover-effects a {
-        padding: 0 0 12px;
-        }
-        .custom-hover-effects a::after {
-        background-color: #ff8000;
-        content: "";
-        height: 3px;
-        width: 100%;
-        position: absolute;
-        bottom: -12px;
-        left: 0;
-        opacity: 0;
-        transition: opacity 300ms ease, bottom 300ms ease;
-        }
-        .custom-hover-effects a:hover::after {
-        opacity: 1;
-        bottom: 0;
-        }
-        /* header new css */
-        .header-top-area {
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        z-index: 9999;
-        -webkit-transition: all 0.4s ease-out;
-        transition: all 0.4s ease-out;
-        }
-        .navigation-menu .navbar-nav li a {
-        color: #333;
-        text-transform: uppercase;
-        font-size: 12px;
-        letter-spacing: 1px;
-        padding: 30px 15px;
-        -webkit-transition: .3s;
-        transition: .3s;
-        font-weight: 600;
-        }
-        .navigation-menu .navbar-nav li a:hover {
-        background: none;
-        color: #555;
-        -webkit-transition: all 0.3s ease-out;
-        transition: all 0.3s ease-out;
-        }
-        .nav li a:focus,
-        .nav li a:hover {
-        background: none;
-        color: #555;
-        -webkit-transition: all 0.3s ease-out;
-        transition: all 0.3s ease-out;
-        }
-        .navbar {
-        margin: 0;
-        }
-        .navigation-background {
-        -webkit-transition: all 0.3s ease-out;
-        transition: all 0.3s ease-out;
-        background: #fff;
-        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.48);
-        }
-        .navigation-background .navigation-menu .navbar-nav li a {
-        color: #000;
-        padding: 20px 15px;
-        -webkit-transition: .3s;
-        transition: .3s;
-        }
-        .navigation-background .navigation-menu .navbar-nav li a:hover {
-        color: #555;
-        }
-        .navigation-menu .navbar-nav li a {
-        color: #333;
-        text-transform: uppercase;
-        font-size: 12px;
-        padding: 30px 15px;
-        -webkit-transition: .3s;
-        transition: .3s;
-        font-weight: 600;
-        }
-        #home {
-        margin-bottom: 0;
-        padding: 4em  0 0  0;
-        }
-        #home .navbar {
-        background: #fff;
-        border: 0;
-        margin-bottom: 0;
-        }
-        #home .navbar-toggle {
-        margin-top: 20px;
-        }
-        #home .navbar-brand {
-        padding: 0;
-        margin-left: 0;
-        }
-        #home .navbar-brand h1 {
-        padding: 2px 0 0 0;
-        margin: 0;
-        }
-        #home .navbar-nav.navbar-right>li:last-child {
-        margin-right: 20px;
-        }
-        #home .navbar-nav.navbar-right>li a {
-        color: #000;
-        font-size: 12px;
-        /*padding: 20px;*/
-        text-transform: uppercase;
-        font-weight: 600;
-        }
-        #home .navbar-nav.navbar-right li>a:hover {
-        background-color: inherit;
-        border: 0;
-        color: #00aeef;
-        }
-        #home .navigation-background .navigation-menu .navbar-nav li a:hover {
-        color: #555;
-        }
-        /*header custom*/
-        @media (min-width: 768px){
-        .navbar-right {
-        padding-top: 14px;
-        }
-        }
-        @media only screen and (max-width: 767px){
-        .navigation-background .navigation-menu .navbar-nav li a {
-        padding: 11px 15px;
-        }
-        }
-        @media (min-width: 768px) {
-        #home .navbar-brand {
-        padding-top: 1px;
-        margin-left: 2px;
-        }
-        }
-        @media (max-width: 767px) {
-        #home .navbar-brand {
-        padding-left: 2px;
-        }
-        }
-        @media only screen and (max-width: 768px) {
-        #home .navbar-nav.navbar-right li {
-        padding: 3px;
-        }
-        }
-        /* Social Icons */
-        .set-social-icons {
-        margin-bottom: -58px;
-        margin-top: 0px !important;
-        border-top: 1px solid #333;
-        padding-top: 1em;
-        }
-        .social-icon {
-        list-style: none;
-        padding-left: 0;
-        margin: 0;
-        text-align: center;
-        }
-        .social-icon:before,
-        .social-icon:after {
-        content: " ";
-        display: table;
-        }
-        .social-icon:after {
-        clear: both;
-        }
-        .social-icon li {
-        display: inline-block;
-        margin: 0px 4px;
-        }
-        .social-icon li a {
-        display: block;
-        width: 40px;
-        text-align: center;
-        font-size: 21px;
-            color: #fff;
-        transition: all 0.3s ease-in-out;
-        }
-        .social-icon li a .fa {
-        line-height: inherit;
-        }
-        .social-icon li a:hover .fa-facebook {
-        color: #0884d5;
-        }
-        .social-icon li a:hover .fa-linkedin {
-        color: #006DC0;
-        }
-        /* Footer */
-        .footer-section {
-        background: #000;
-        padding-top: 3em;
-        color: #999;
-        padding-bottom: 3.5em;
-        }
-        .footer-section p {
-        font-size: 14px;
-        }
-        .footer-section a {
-        color: #999;
-        }
-        .footer-section a:hover {
-        color: #fff;
-        }
-        /* Responsive */
-        @media only screen and (min-width: 767px) and (max-width: 991px) {
-        .navigation-menu .navbar-nav li a {
-        padding: 30px 11px;
-        font-size: 12px;
-        }
-        }
-        @media only screen and (max-width: 991px) {
-        .footer-section p {
-        text-align: center !important;
-        }
-        }
-        @media only screen and (max-width: 767px) {
-        .navbar-toggle .icon-bar {
-        background: #333;
-        }
-        .navigation-background .navbar-toggle .icon-bar {
-        background: #ff8800;
-        }
-        .navbar-toggle {
-        margin-right: 0px;
-        margin-top: -30px;
-        }
-        .navbar {
-        min-height: 0px;
-        }
-        .navigation-menu .navbar-nav li a {
-        padding: 11px 15px;
-        }
-        .navigation-menu .navbar-nav li a:hover {
-        color: #24b662;
-        }
-        .navigation-background .navigation-menu .navbar-nav li a:hover {
-        color: #555;
-        }
-        .navigation-background .navigation-menu .navbar-nav li a {
-        padding: 11px 15px;
-        }
-        .navbar-toggle {
-        margin-top: -30px;
-        }
-        }
-        @media only screen and (max-width: 555px) {
-        .social-icon li a {
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        font-size: 20px;
-        }
-        }
-        .digisquire-credit a {
-        color: #ff8800;
-        font-weight: 600;
-        }
-        /*new styles*/
-        .single-features {
- overflow: hidden;
- padding-top: 65px;
- padding-bottom: 40px;
+         /*custom hover effects*/
+         .custom-hover-effects a {
+         padding: 0 0 12px;
+         }
+         .custom-hover-effects a::after {
+         background-color: #ff8000;
+         content: "";
+         height: 3px;
+         width: 100%;
+         position: absolute;
+         bottom: -12px;
+         left: 0;
+         opacity: 0;
+         transition: opacity 300ms ease, bottom 300ms ease;
+         }
+         .custom-hover-effects a:hover::after {
+         opacity: 1;
+         bottom: 0;
+         }
+         /* header new css */
+         .header-top-area {
+         position: fixed;
+         left: 0;
+         top: 0;
+         width: 100%;
+         z-index: 9999;
+         -webkit-transition: all 0.4s ease-out;
+         transition: all 0.4s ease-out;
+         }
+         .navigation-menu .navbar-nav li a {
+         color: #333;
+         text-transform: uppercase;
+         font-size: 12px;
+         letter-spacing: 1px;
+         padding: 30px 15px;
+         -webkit-transition: .3s;
+         transition: .3s;
+         font-weight: 600;
+         }
+         .navigation-menu .navbar-nav li a:hover {
+         background: none;
+         color: #555;
+         -webkit-transition: all 0.3s ease-out;
+         transition: all 0.3s ease-out;
+         }
+         .nav li a:focus,
+         .nav li a:hover {
+         background: none;
+         color: #555;
+         -webkit-transition: all 0.3s ease-out;
+         transition: all 0.3s ease-out;
+         }
+         .navbar {
+         margin: 0;
+         }
+         .navigation-background {
+         -webkit-transition: all 0.3s ease-out;
+         transition: all 0.3s ease-out;
+         background: #fff;
+         box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.48);
+         }
+         .navigation-background .navigation-menu .navbar-nav li a {
+         color: #000;
+         padding: 20px 15px;
+         -webkit-transition: .3s;
+         transition: .3s;
+         }
+         .navigation-background .navigation-menu .navbar-nav li a:hover {
+         color: #555;
+         }
+         .navigation-menu .navbar-nav li a {
+         color: #333;
+         text-transform: uppercase;
+         font-size: 12px;
+         padding: 30px 15px;
+         -webkit-transition: .3s;
+         transition: .3s;
+         font-weight: 600;
+         }
+         #home {
+         margin-bottom: 0;
+         padding: 4em  0 0  0;
+         }
+         #home .navbar {
+         background: #fff;
+         border: 0;
+         margin-bottom: 0;
+         }
+         #home .navbar-toggle {
+         margin-top: 20px;
+         }
+         #home .navbar-brand {
+         padding: 0;
+         margin-left: 0;
+         }
+         #home .navbar-brand h1 {
+         padding: 2px 0 0 0;
+         margin: 0;
+         }
+         #home .navbar-nav.navbar-right>li:last-child {
+         margin-right: 20px;
+         }
+         #home .navbar-nav.navbar-right>li a {
+         color: #000;
+         font-size: 12px;
+         /*padding: 20px;*/
+         text-transform: uppercase;
+         font-weight: 600;
+         }
+         #home .navbar-nav.navbar-right li>a:hover {
+         background-color: inherit;
+         border: 0;
+         color: #00aeef;
+         }
+         #home .navigation-background .navigation-menu .navbar-nav li a:hover {
+         color: #555;
+         }
+         /*header custom*/
+         @media (min-width: 768px){
+         .navbar-right {
+         padding-top: 14px;
+         }
+         }
+         @media only screen and (max-width: 767px){
+         .navigation-background .navigation-menu .navbar-nav li a {
+         padding: 11px 15px;
+         }
+         }
+         @media (min-width: 768px) {
+         #home .navbar-brand {
+         padding-top: 1px;
+         margin-left: 2px;
+         }
+         .set-min-height{
+           min-height: 16.9em;
+         }
+         }
+         @media (max-width: 767px) {
+         #home .navbar-brand {
+         padding-left: 2px;
+         }
+         }
+         @media only screen and (max-width: 768px) {
+         #home .navbar-nav.navbar-right li {
+         padding: 3px;
+         }
+         }
+         /* Social Icons */
+         .set-social-icons {
+         margin-bottom: -58px;
+         margin-top: 0px !important;
+         border-top: 1px solid #333;
+         padding-top: 1em;
+         }
+         .social-icon {
+         list-style: none;
+         padding-left: 0;
+         margin: 0;
+         text-align: center;
+         }
+         .social-icon:before,
+         .social-icon:after {
+         content: " ";
+         display: table;
+         }
+         .social-icon:after {
+         clear: both;
+         }
+         .social-icon li {
+         display: inline-block;
+         margin: 0px 4px;
+         }
+         .social-icon li a {
+         display: block;
+         width: 40px;
+         text-align: center;
+         font-size: 21px;
+         color: #fff;
+         transition: all 0.3s ease-in-out;
+         }
+         .social-icon li a .fa {
+         line-height: inherit;
+         }
+         .social-icon li a:hover .fa-facebook {
+         color: #0884d5;
+         }
+         .social-icon li a:hover .fa-linkedin {
+         color: #006DC0;
+         }
+         /* Footer */
+         .footer-section {
+         background: #000;
+         padding-top: 3em;
+         color: #999;
+         padding-bottom: 3.5em;
+         }
+         .footer-section p {
+         font-size: 14px;
+         }
+         .footer-section a {
+         color: #999;
+         }
+         .footer-section a:hover {
+         color: #fff;
+         }
+         /* Responsive */
+         @media only screen and (min-width: 767px) and (max-width: 991px) {
+         .navigation-menu .navbar-nav li a {
+         padding: 30px 11px;
+         font-size: 12px;
+         }
+         }
+         @media only screen and (max-width: 991px) {
+         .footer-section p {
+         text-align: center !important;
+         }
+         }
+         @media only screen and (max-width: 767px) {
+         .navbar-toggle .icon-bar {
+         background: #333;
+         }
+         .navigation-background .navbar-toggle .icon-bar {
+         background: #ff8800;
+         }
+         .navbar-toggle {
+         margin-right: 0px;
+         margin-top: -30px;
+         }
+         .navbar {
+         min-height: 0px;
+         }
+         .navigation-menu .navbar-nav li a {
+         padding: 11px 15px;
+         }
+         .navigation-menu .navbar-nav li a:hover {
+         color: #24b662;
+         }
+         .navigation-background .navigation-menu .navbar-nav li a:hover {
+         color: #555;
+         }
+         .navigation-background .navigation-menu .navbar-nav li a {
+         padding: 11px 15px;
+         }
+         .navbar-toggle {
+         margin-top: -30px;
+         }
+         }
+         @media only screen and (max-width: 555px) {
+         .social-icon li a {
+         width: 40px;
+         height: 40px;
+         line-height: 40px;
+         font-size: 20px;
+         }
+         }
+         .digisquire-credit a {
+         color: #ff8800;
+         font-weight: 600;
+         }
+         /*new styles*/
+         .single-features {
+         overflow: hidden;
+         padding-top: 65px;
+         padding-bottom: 40px;
+         }
+         .single-features:last-child {
+         padding-bottom: 95px;
+         }
+         .single-features h2{
+         margin-bottom: 15px;
+         }
+         .panel-text:hover{
+         box-shadow: 0 4px 5px rgba(0,0,0,0.4);
+         }
+         .panel-text{
+         box-shadow: 0 4px 4px rgba(0,0,0,0.15);
+         padding: 1.1em;
+         border: 1px solid rgba(0, 0, 0, 0.04);
+         }
+         /*wobble overwrite*/
+         a.read-w3ls {
+         background: #ff8800;
+         transition: 0.5s all;
+         -webkit-transition: 0.5s all;
+         -o-transition: 0.5s all;
+         -moz-transition: 0.5s all;
+         -ms-transition: 0.5s all;
+         }
+         a.read-w3ls:hover {
+         background: #bc0023;
+         transition: 0.5s all;
+         -webkit-transition: 0.5s all;
+         -o-transition: 0.5s all;
+         -moz-transition: 0.5s all;
+         -ms-transition: 0.5s all;
+         }
+         .footernav-submenu{
+         font-size: 0.8em;
+         list-style: none;
+         }
+         .member-info {
+         padding: 15px;
+         text-align: justify;
+         }
+         .member-photo {
+         overflow: hidden;
+         position: relative;
+         }
+         @media only screen and (max-width : 768px) {
+         h2{
+         font-size:20px;
+         }
+         .box-mrgn-btm{
+          margin-bottom: 1.5em;
+         }
+         .single-features {
+         padding-bottom: 0;
+         padding-top: 30px;
+         }
+         .single-features img {
+         margin-bottom: 25px;
+         }
+         .single-features {
+         text-align: center;
+         }
+         .single-features * {
+         display: inline-block;
+         text-align: center;
+         }
+         .footernav-submenu{
+         text-align: center;
+         }
+         }
+         .scroll:before{
+  content: '▾';
+  color: #fff;
+  position: absolute;
+  /*opacity: 0.7;*/
+  background: #000;
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  /*bottom: 20px;*/
+  left: 50%;
+  animation: bounce 1s ease infinite;
 }
 
-.single-features:last-child {
- padding-bottom: 95px;
+@keyframes bounce {
+  50% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
+b, strong {
+    font-size: 1.19em;
+}
+/*.icon-scroll,
+.icon-scroll:before{
+  position: absolute;
+  left: 50%;
+}
+  .icon-scroll{
 
-.single-features h2{
- margin-bottom: 15px;
-}
+  width: 40px;
+  height: 70px;
+  margin-left: -20px;
+  top: 50%;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px #fff;
+  border-radius: 25px;
+  }
+  .icon-scroll:before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    margin-left: -4px;
+    top: 8px;
+    border-radius: 4px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+  }
+  @keyframes scroll{
+    0%{
+      opacity: 1;
+    }
 
-.panel-text:hover{
-box-shadow: 0 4px 5px rgba(0,0,0,0.4);
-}
+    100%{
+      opacity: 0;
+      transform: translateY(46px);
+    }
+  }*/
 
-.panel-text{
-      box-shadow: 0 4px 4px rgba(0,0,0,0.15);
-      padding: 1.1em;
-      border: 1px solid rgba(0, 0, 0, 0.04);
-}
 
-/*wobble overwrite*/
-a.read-w3ls {
-    background: #ff8800;
-    transition: 0.5s all;
-    -webkit-transition: 0.5s all;
-    -o-transition: 0.5s all;
-    -moz-transition: 0.5s all;
-    -ms-transition: 0.5s all;
-}
-a.read-w3ls:hover {
-    background: #bc0023;
-    transition: 0.5s all;
-    -webkit-transition: 0.5s all;
-    -o-transition: 0.5s all;
-    -moz-transition: 0.5s all;
-    -ms-transition: 0.5s all;
-}
-.footernav-submenu{
-  font-size: 0.8em;
-  list-style: none;
-}
-.member-info {
-    padding: 15px;
-    text-align: justify;
-}
-.member-photo {
-    overflow: hidden;
-    position: relative;
-}
-@media only screen and (max-width : 768px) {
 
- h2{
-   font-size:20px;
- }
- .single-features {
-   padding-bottom: 0;
-   padding-top: 30px;
- }
-
- .single-features img {
-   margin-bottom: 25px;
- }
- .single-features {
-   text-align: center;
- }
- .single-features * {
-   display: inline-block;
-   text-align: center;
- }
- .footernav-submenu{
-   text-align: center;
- }
-
-}
       </style>
    </head>
    <body>
@@ -409,102 +475,116 @@ a.read-w3ls:hover {
          </div>
       </header>
       <!-- Landing  -->
-      <section id="our-team" style="padding-top:3em;padding-bottom:2em;">
-           <div class="container">
-              <div class="row">
-                 <div class="col-md-3 col-sm-6 wow fadeInDown animated" data-wow-duration="500ms" style="visibility: visible; animation-duration: 500ms; animation-name: fadeInDown;">
-                    <article class="team-mate">
-                       <div class="member-photo" style="padding: 1em;background: #000;">
-                          <img class="img-responsive" src="images\bg\digitalist.svg" alt="Alok Nair Founder Digisquire:aloknair@digisquire.co" style="height: 100px;">
-                       </div>
-                       <div class="member-info" style="
-    border:  1px solid #000;
-">
-                               <p>The hard reality is that a <b>lack of
-digital skills is the number
-one barrier</b> organisations face for
-digital transformation.</p>
-                       </div>
-                    </article>
-                 </div>
-                 <div class="col-md-3 col-sm-6 wow fadeInDown animated" data-wow-duration="500ms" style="visibility: visible; animation-duration: 500ms; animation-name: fadeInDown;">
-                    <article class="team-mate">
-                       <div class="member-photo" style="padding: 1em;background: #ed1c24;" >
-                          <img class="img-responsive" src="images\bg\cio_logo.svg" alt="Alok Nair Founder Digisquire:aloknair@digisquire.co" style="height: 100px;">
-                       </div>
-                       <div class="member-info" style="
-    border: 1px solid #ed1c24;
-">
-                               <p><b>UI/UX</b> designers and
-developers are one of the
-<b>TOP 10</b> skills required for
-Digital Transformation.</p>
-                       </div>
-                    </article>
-                 </div>
-                 <div class="col-md-3 col-sm-6 wow fadeInDown animated" data-wow-duration="500ms" style="visibility: visible; animation-duration: 500ms; animation-name: fadeInDown;">
-                    <article class="team-mate">
-                       <div class="member-photo">
-                          <img class="img-responsive" src="images\bg\logo_cc.svg" alt="Alok Nair Founder Digisquire:aloknair@digisquire.co" style="height: 131px;">
-                       </div>
-                       <div class="member-info" style="
-    border: 1px solid  #6e0438;
-">
-                               <p><b>77%</b>
-of companies consider
-<b>missing digital skills</b> as
-the key <b>hurdle to their
-Digital Transformation</b>.</p>
-                       </div>
-                    </article>
-                 </div>
-                 <div class="col-md-3 col-sm-6 wow fadeInDown animated" data-wow-duration="500ms" style="visibility: visible; animation-duration: 500ms; animation-name: fadeInDown;">
-                    <article class="team-mate">
-                       <div class="member-photo">
-                          <img class="img-responsive" src="images\bg\deloitte.svg" alt="Alok Nair Founder Digisquire:aloknair@digisquire.co" style="height: 131px;background: #000;
-    padding: 0.5em;">
-                       </div>
-                       <div class="member-info" style="
-    border: 1px solid #000;
-">
-                               <p><b>93%</b> of those with
-digital strategy agree or strongly agree
-that their objective of their digital strategy
-is to <b>enhance customer
-experience and engagement</b>.</p>
-                       </div>
-                    </article>
-                 </div>
-              </div>
-           </div>
-        </section>
-    <!-- new section -->
-    <section id="features">
-    <div class="container">
-        <div class="row">
-            <div class="single-features">
-                <div class="panel-img col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                    <img style="min-height: 23.7em;"src="images/bg/part-5.jpg" class="img-responsive" alt="">
-                </div>
-                <div class=" panel-text col-sm-7 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                    <h2 style="font-family: 'orbitron',sans-serif;font-size: 2em;">Partners in Digital Transformation</h2>
-                    <P style="font-family: 'Open Sans',sans-serif;text-align:justify;">Bridge your gaps in the Digital Transformation journey through our expertise. We have extensive experience in executing Agile projects and are experts in Front End technologies. We partner with companies implementing digital transformation program for themselves or their clients. We are also building skills in niche technology areas of Microsoft Dynamics and deep expertise in DevOps.</P>
-                    <a href="knowUsMore.html" class="hvr-icon-wobble-horizontal read-w3ls">Know more</a>
-                </div>
+      <section id="our-team" style="padding-top:3em;    padding-bottom: 0.28em;">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-3 col-sm-6 wow fadeInDown animated" data-wow-duration="500ms" style="visibility: visible; animation-duration: 500ms; animation-name: fadeInDown;">
+                  <article class="team-mate box-mrgn-btm" style="box-shadow: 6px 5px 4px -1px rgba(90, 91, 95, 0.83);">
+                     <div class="member-photo" style="padding: 1em;background: #000;">
+                        <img class="img-responsive" src="images\bg\digitalist.svg" alt="Alok Nair Founder Digisquire:aloknair@digisquire.co" style="height: 100px;">
+                     </div>
+                     <div class="member-info set-min-height" style="border:  1px solid rgb(239, 171, 31);    background-color: rgb(239, 171, 31);">
+                        <p>The hard reality is that a <b>lack of
+                           digital skills is the number
+                           one barrier</b> organisations face for
+                           digital transformation.
+                        </p>
+                     </div>
+                  </article>
+               </div>
+               <div class="col-md-3 col-sm-6 wow fadeInDown animated" data-wow-duration="500ms" style="visibility: visible; animation-duration: 500ms; animation-name: fadeInDown;">
+                  <article class="team-mate box-mrgn-btm" style="box-shadow: 6px 5px 4px -1px rgba(90, 91, 95, 0.83);">
+                     <div class="member-photo" style="padding: 1em;background: #ed1c24;" >
+                        <img class="img-responsive" src="images\bg\cio_logo.svg" alt="Alok Nair Founder Digisquire:aloknair@digisquire.co" style="height: 100px;">
+                     </div>
+                     <div class="member-info set-min-height" style="border-top: 1px solid #fff;background-color: #ed1c24;">
+                        <p><b>UI/UX</b> designers and
+                           developers are one of the
+                           <b>TOP 10</b> skills required for
+                           Digital Transformation.
+                        </p>
+                     </div>
+                  </article>
+               </div>
+               <div class="col-md-3 col-sm-6 wow fadeInDown animated" data-wow-duration="500ms" style="visibility: visible; animation-duration: 500ms; animation-name: fadeInDown;">
+                  <article class="team-mate box-mrgn-btm" style="box-shadow: 6px 5px 4px -1px rgba(90, 91, 95, 0.83);">
+                     <div class="member-photo">
+                        <img class="img-responsive" src="images\bg\logo_cc.svg" alt="Alok Nair Founder Digisquire:aloknair@digisquire.co" style="height: 131px;border: 1px solid #6e0438;border-bottom: none;padding-left: 0.5em;padding-right: 0.5em;">
+                     </div>
+                     <div class="member-info set-min-height" style="border: 1px solid  #6e0438;">
+                        <p><b>77%</b>
+                           of companies consider
+                           <b>missing digital skills</b> as
+                           the key <b>hurdle to their
+                           Digital Transformation</b>.
+                        </p>
+                     </div>
+                  </article>
+               </div>
+               <div class="col-md-3 col-sm-6 wow fadeInDown animated" data-wow-duration="500ms" style="visibility: visible; animation-duration: 500ms; animation-name: fadeInDown;">
+                  <article class="team-mate box-mrgn-btm" style="box-shadow: 2px 5px 4px -1px rgba(90, 91, 95, 0.83);">
+                     <div class="member-photo">
+                        <img class="img-responsive" src="images\bg\deloitte.svg" alt="Alok Nair Founder Digisquire:aloknair@digisquire.co" style="height: 131px;background: #000;
+                           padding: 0.5em;">
+                     </div>
+                     <div class="member-info" style="background-color: #86bc25;border: 1px solid #86bc25;">
+                        <p><b>93%</b> of those with
+                           digital strategy agree or strongly agree
+                           that their objective of their digital strategy
+                           is to <b>enhance customer
+                           experience and engagement</b>.
+                        </p>
+                     </div>
+                  </article>
+               </div>
             </div>
-            <div class="single-features">
-                <div class=" panel-text col-sm-7 align-right wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                    <h2 style="font-family: 'orbitron',sans-serif;font-size: 1.87em;">Digital Transformation for Companies</h2>
-                    <P style="font-family: 'Open Sans',sans-serif;text-align:justify;">Today if your systems and processes are not digitised you are probably having a lot of operational slack. It's time to catapult your business to a higher league. We help transform your business so that you have an improved operational efficiency and thereby increase your bottomline.</P>
-                    <a href="knowUsMore.html" class="hvr-icon-wobble-horizontal read-w3ls">Know more</a>
-                </div>
-                <div class="panel-img col-sm-5 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                    <img src="images/bg/part-4.jpg" class="img-responsive" alt="">
-                </div>
+            <div class="row box-mrgn-btm" style="margin-top: 1.2em;">
+               <div class="col-md-3 col-sm-6">
+                  <div class="member-photo">
+                     <img class="img-responsive" src="images\bg\microsoftr.png" alt="" style="padding: 0.5em;">
+                  </div>
+               </div>
+               <div class="col-md-9 col-sm-6" style="margin-top:0.6em;">
+                  <div class="member-info" style="box-shadow: 6px 5px 4px -1px rgba(90, 91, 95, 0.83);background-color: rgba(5, 166, 239, 0.76);">
+                     <p><b>50%</b>
+                        of organisations <b>prioritise
+                        working with Service
+                        Providers</b> for Skills acquisition.
+                     </p>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-</section>
+         </div>
+
+      </section>
+      <div class="scroll"></div>
+      <!-- new section -->
+      <section id="features" style="margin-top:2em;">
+         <div class="container">
+            <div class="row">
+               <div class="single-features">
+                  <div class="panel-img col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                     <img style="min-height: 23.7em;"src="images/bg/part-5.jpg" class="img-responsive" alt="">
+                  </div>
+                  <div class=" panel-text col-sm-7 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                     <h2 style="font-family: 'orbitron',sans-serif;font-size: 2em;">Partners in Digital Transformation</h2>
+                     <P style="font-family: 'Open Sans',sans-serif;text-align:justify;">Bridge your gaps in the Digital Transformation journey through our expertise. We have extensive experience in executing Agile projects and are experts in Front End technologies. We partner with companies implementing digital transformation program for themselves or their clients. We are also building skills in niche technology areas of Microsoft Dynamics and deep expertise in DevOps.</P>
+                     <a href="knowUsMore.html" class="hvr-icon-wobble-horizontal read-w3ls">Know more</a>
+                  </div>
+               </div>
+               <div class="single-features">
+                  <div class=" panel-text col-sm-7 align-right wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                     <h2 style="font-family: 'orbitron',sans-serif;font-size: 1.87em;">Digital Transformation for Companies</h2>
+                     <P style="font-family: 'Open Sans',sans-serif;text-align:justify;">Today if your systems and processes are not digitised you are probably having a lot of operational slack. It's time to catapult your business to a higher league. We help transform your business so that you have an improved operational efficiency and thereby increase your bottomline.</P>
+                     <a href="knowUsMore.html" class="hvr-icon-wobble-horizontal read-w3ls">Know more</a>
+                  </div>
+                  <div class="panel-img col-sm-5 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                     <img src="images/bg/part-4.jpg" class="img-responsive" alt="">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
       <!-- Home & Menu Section End-->
       <!-- Footer Start -->
       <footer class="footer-section">
@@ -531,15 +611,14 @@ experience and engagement</b>.</p>
                   <p>Design By <a href="index.html" target="_blank" title="DigiSquire">DigiSquire</a></p>
                </div>
             </div>
-
-         <div class="row">
-            <div class="col-sm-12 set-social-icons">
-              <ul class="social-icon">
-                 <li><a href="https://www.facebook.com/DigiSquire/" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                 <li><a href="https://www.linkedin.com/company/13370130/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-              </ul>
+            <div class="row">
+               <div class="col-sm-12 set-social-icons">
+                  <ul class="social-icon">
+                     <li><a href="https://www.facebook.com/DigiSquire/" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                     <li><a href="https://www.linkedin.com/company/13370130/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+               </div>
             </div>
-         </div>
          </div>
       </footer>
       <!-- Footer End -->
