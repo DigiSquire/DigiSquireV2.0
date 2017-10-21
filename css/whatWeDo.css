@@ -507,6 +507,8 @@ body.loaded #preloader {
 
 #clients-logo-section .clients-logo-img {
 	padding: 0px 10px;
+	left: 27%;
+    position: relative;	
 }
 
 

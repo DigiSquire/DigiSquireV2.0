@@ -23,11 +23,11 @@ body {
 	height: 100%
 }
 ::selection {
-	background-color: #ffffff;
+	background-color: #3297fd;
 	color: #ffffff;
 }
 ::-moz-selection {
-	background-color: #ffffff;
+	background-color: #3297fd;
 	color: #ffffff;
 }
 

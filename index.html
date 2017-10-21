@@ -160,18 +160,36 @@
          .img-scale{
            min-height: 23.7em;
          }
-
+         .pos-read-lnk{
+           position: absolute;
+           bottom: 10px;
+           font-weight: 600;
+           font-family: 'Orbitron', sans-serif;
+           color: #333;
+           font-size: 0.87em;
+           right: 8px;
+         }
+         .pos-read-lnk-ms{
+           bottom: 0;
+         }
+         .box-pad{
+           padding-bottom: 30px;
+            padding-top: 6px;
+            padding-left: 10px;
+            padding-right: 10px;
+         }
          @media (min-width: 768px) {
          #home .navbar-brand {
          padding-top: 1px;
          margin-left: 2px;
          }
          .set-min-height{
-           min-height: 16.7em;
+           min-height: 15em;
          }
          .box-mrgn-btm {
             margin-bottom: 0.4em;
         }
+
          }
          @media (max-width: 767px) {
          #home .navbar-brand {
@@ -204,7 +222,7 @@
            text-transform: capitalize;
          }
          .ds-title{
-            color: #ff8800;
+            color: #e4681f;
             font-weight: 600;
             font-size: 1.1em;
             letter-spacing: 0.2em;
@@ -301,6 +319,15 @@
          padding: 30px 11px;
          font-size: 12px;
          }
+         .pos-read-lnk {
+          bottom: 2em;
+          }
+          .pos-read-lnk-ms {
+            bottom: 0;
+          }
+        .box-pad {
+          padding-bottom: 25px;
+          }
          }
          @media only screen and (max-width: 991px) {
          .footer-section p {
@@ -380,6 +407,9 @@
          border: 1px solid rgba(0, 0, 0, 0.04);
          }
          /*wobble overwrite*/
+         #survey-cards a:hover{
+           color: #000;
+         }
          a.read-w3ls {
          background: #e4681f;
          transition: 0.5s all;
@@ -401,7 +431,6 @@
          list-style: none;
          }
          .member-info {
-         padding: 15px;
          text-align: center;
          }
          .member-photo {
@@ -451,6 +480,9 @@
          @media only screen and (min-width:1024px) and (max-width:1199px) {
          .set-min-height {
            min-height: 18.7em;
+          }
+          .box-pad {
+            padding-bottom: 25px;
           }
          }
 
@@ -508,13 +540,15 @@
                      <div class="member-photo" style="padding: 1em;background: #000;">
                         <img class="img-responsive" src="images\bg\digitalist.svg" alt="Alok Nair Founder Digisquire:aloknair@digisquire.co" style="height: 45px;">
                      </div>
-                     <div class="member-info set-min-height" style="border:  1px solid rgb(239, 171, 31);    background-color: rgb(239, 171, 31);">
+                     <div class="member-info box-pad set-min-height" style="border:  1px solid rgb(239, 171, 31);    background-color: rgb(239, 171, 31);">
                         <p>The hard reality is that a <b>lack of
                            digital skills is the number
                            one barrier</b> organisations face for
                            digital transformation.
                         </p>
+                        <a href="http://www.digitalistmag.com/future-of-work/2017/09/26/dont-let-skills-gap-jeopardize-digital-transformation-map-out-skill-development-plan-05365792" target="_blank" class="hvr-icon-wobble-horizontal pos-read-lnk">Read Full Article</a>
                      </div>
+
                   </article>
                </div>
                <div class="col-md-3 col-sm-6">
@@ -522,12 +556,13 @@
                      <div class="member-photo" style="padding-top: 0.2em;background: #ed1c24;height: 77px;" >
                         <img class="img-responsive" src="images\bg\cio_logo.svg" alt="Alok Nair Founder Digisquire:aloknair@digisquire.co" style="height: 75px;">
                      </div>
-                     <div class="member-info set-min-height" style="border-top:1px solid #fff;background-color: #ed1c24;color: #fff;">
+                     <div class="member-info box-pad set-min-height" style="border-top:1px solid #fff;background-color: #ed1c24;color: #fff;">
                         <p><b>UI/UX</b> designers and
                            developers are one of the
                            <b>TOP 10</b> skills required for
                            Digital Transformation.
                         </p>
+                        <a href="https://www.cio.com/article/3164125/hiring/10-it-skills-that-employers-need-in-2017.html#slide6" target="_blank" class="hvr-icon-wobble-horizontal pos-read-lnk">Read Full Article</a>
                      </div>
                   </article>
                </div>
@@ -536,13 +571,14 @@
                      <div class="member-photo">
                         <img class="img-responsive" src="images\bg\logo_cc.svg" alt="Alok Nair Founder Digisquire:aloknair@digisquire.co" style="height: 77px;border: 1px solid rgba(110, 4, 56, 0.38);border-bottom: none;padding-left: 0.5em;padding-right: 0.5em;">
                      </div>
-                     <div class="member-info set-min-height" style="border: 1px solid  rgba(110, 4, 56, 0.38);">
+                     <div class="member-info box-pad set-min-height" style="border: 1px solid  rgba(110, 4, 56, 0.38);">
                         <p><b>77%</b>
                            of companies consider
                            <b>missing digital skills</b> as
                            the key <b>hurdle to their
                            Digital Transformation</b>.
                         </p>
+                        <a href="https://www.capgemini.com/wp-content/uploads/2017/07/the_digital_talent_gap27-09_0.pdf" target="_blank" class="hvr-icon-wobble-horizontal pos-read-lnk">Read Full Article</a>
                      </div>
                   </article>
                </div>
@@ -552,13 +588,14 @@
                         <img class="img-responsive" src="images\bg\deloitte.svg" alt="Alok Nair Founder Digisquire:aloknair@digisquire.co" style="height: 77px;background: #000;
                            padding: 0.5em;">
                      </div>
-                     <div class="member-info" style="background-color: #86bc25;border: 1px solid #86bc25;">
+                     <div class="member-info box-pad" style="background-color: #86bc25;border: 1px solid #86bc25;">
                         <p><b>93%</b> of those with
                            digital strategy agree or strongly agree
                            that their objective of their digital strategy
                            is to <b>enhance customer
                            experience and engagement</b>.
                         </p>
+                        <a href="https://dupress.deloitte.com/dup-us-en/industry/financial-services/digital-transformation-in-financial-services.html" target="_blank" class="hvr-icon-wobble-horizontal pos-read-lnk">Read Full Article</a>
                      </div>
                   </article>
                </div>
@@ -570,12 +607,13 @@
                   </div>
                </div>
                <div class="col-md-9 col-sm-8" style="margin-top:0.6em;">
-                  <div class="member-info" style="box-shadow: 6px 5px 4px -1px rgba(90, 91, 95, 0.83);background-color: rgba(5, 166, 239, 0.76);">
+                  <div class="member-info" style="box-shadow: 6px 5px 4px -1px rgba(90, 91, 95, 0.83);background-color: rgba(5, 166, 239, 0.76);padding:15px;">
                      <p><b>50%</b>
                         of organisations <b>prioritise
                         working with Service
                         Providers</b> for Skills acquisition.
                      </p>
+                     <a href="http://partner-l1.microsoft.com/rs/090-ADL-253/images/2017%20Microsoft%20Hosting%20and%20Cloud%20Study.pdf" target="_blank" class="hvr-icon-wobble-horizontal pos-read-lnk pos-read-lnk-ms">Read Full Article</a>
                   </div>
                </div>
             </div>
@@ -599,14 +637,14 @@
                   <div class=" panel-text col-sm-7 wow fadeInRight" data-wow-duration="800ms" data-wow-delay="300ms">
                      <h2>Partners in Digital Transformation</h2>
                      <P style="font-family: 'Open Sans',sans-serif;text-align:justify;">Bridge your gaps in the Digital Transformation journey through our expertise. We have extensive experience in executing Agile projects and are experts in Front End technologies. We partner with companies implementing digital transformation program for themselves or their clients. We are also building skills in niche technology areas of Microsoft Dynamics and deep expertise in DevOps.</P>
-                     <a href="knowUsMore.html" class="hvr-icon-wobble-horizontal read-w3ls">Know more</a>
+                     <a href="contact.html" class="hvr-icon-wobble-horizontal read-w3ls">Talk To Us</a>
                   </div>
                </div>
                <div class="single-features">
                   <div class=" panel-text col-sm-7 align-right wow fadeInLeft" data-wow-duration="800ms" data-wow-delay="400ms">
                      <h2>Digital Transformation for Companies</h2>
                      <P style="font-family: 'Open Sans',sans-serif;text-align:justify;">Today if your systems and processes are not digitised you are probably having a lot of operational slack. It's time to catapult your business to a higher league. We help transform your business so that you have an improved operational efficiency and thereby increase your bottomline.</P>
-                     <a href="knowUsMore.html" class="hvr-icon-wobble-horizontal read-w3ls">Know more</a>
+                     <a href="contact.html" class="hvr-icon-wobble-horizontal read-w3ls">Talk To Us</a>
                   </div>
                   <div class="panel-img col-sm-5 wow fadeInRight" data-wow-duration="800ms" data-wow-delay="300ms">
                      <img src="images/bg/part-4.jpg" class="img-responsive img-scale-2" alt="">
