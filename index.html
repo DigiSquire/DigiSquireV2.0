@@ -18,6 +18,7 @@
       <!-- All CSS Plugins -->
       <link href="css/bootstrap.min.css" rel="stylesheet">
       <link href="css/font-awesome.min.css" rel="stylesheet">
+      <link href="css/animate.min.css" rel="stylesheet">
       <!-- Main CSS Stylesheet -->
       <link rel="stylesheet" type="text/css" href="css/homeCl.css">
       <!-- Google Web Fonts  -->
@@ -156,14 +157,21 @@
          padding: 11px 15px;
          }
          }
+         .img-scale{
+           min-height: 23.7em;
+         }
+
          @media (min-width: 768px) {
          #home .navbar-brand {
          padding-top: 1px;
          margin-left: 2px;
          }
          .set-min-height{
-           min-height: 16.9em;
+           min-height: 16.7em;
          }
+         .box-mrgn-btm {
+            margin-bottom: 0.4em;
+        }
          }
          @media (max-width: 767px) {
          #home .navbar-brand {
@@ -174,7 +182,61 @@
          #home .navbar-nav.navbar-right li {
          padding: 3px;
          }
+         .set-min-height {
+           min-height: 12.7em;
+      }
          }
+         #survey-cards{
+           padding-top: 3em;
+           padding-bottom: 1.28em;
+         }
+         #survey-cards p{
+           font-size: 0.85em;
+           font-family: 'Orbitron', sans-serif;
+         }
+
+
+         .section-title h1{
+           font-family: 'Orbitron', sans-serif;
+           font-size: 2.2em;
+           text-align: center;
+           padding: 0.5em;
+           text-transform: capitalize;
+         }
+         .ds-title{
+            color: #ff8800;
+            font-weight: 600;
+            font-size: 1.1em;
+            letter-spacing: 0.2em;
+            line-height: 1.5em;
+          }
+          .scroll:before{
+             content: '▾';
+             color: #fff;
+             position: absolute;
+             /*opacity: 0.7;*/
+             background: #000;
+             font-size: 30px;
+             width: 40px;
+             height: 40px;
+             line-height: 40px;
+             text-align: center;
+             border-radius: 50%;
+             /*bottom: 20px;*/
+             left: 50%;
+             animation: bounce 1s ease infinite;
+           }
+
+           @keyframes bounce {
+             50% {
+               transform: translateY(-50%);
+             }
+             100% {
+               transform: translateY(0);
+             }
+           }
+
+
          /* Social Icons */
          .set-social-icons {
          margin-bottom: -58px;
@@ -274,6 +336,12 @@
          .navbar-toggle {
          margin-top: -30px;
          }
+         .section-title h1 {
+           font-size: 1.5em;
+         }
+         .set-min-height {
+           min-height: 0;
+      }
          }
          @media only screen and (max-width: 555px) {
          .social-icon li a {
@@ -290,7 +358,7 @@
          /*new styles*/
          .single-features {
          overflow: hidden;
-         padding-top: 65px;
+         padding-top: 25px;
          padding-bottom: 40px;
          }
          .single-features:last-child {
@@ -298,6 +366,7 @@
          }
          .single-features h2{
          margin-bottom: 15px;
+         font-family: 'orbitron',sans-serif;font-size: 1.85em;
          }
          .panel-text:hover{
          box-shadow: 0 4px 5px rgba(0,0,0,0.4);
@@ -309,7 +378,7 @@
          }
          /*wobble overwrite*/
          a.read-w3ls {
-         background: #ff8800;
+         background: #e4681f;
          transition: 0.5s all;
          -webkit-transition: 0.5s all;
          -o-transition: 0.5s all;
@@ -330,7 +399,7 @@
          }
          .member-info {
          padding: 15px;
-         text-align: justify;
+         text-align: center;
          }
          .member-photo {
          overflow: hidden;
@@ -350,6 +419,9 @@
          .single-features img {
          margin-bottom: 25px;
          }
+         .img-scale{
+           min-height: 16em;
+         }
          .single-features {
          text-align: center;
          }
@@ -357,77 +429,26 @@
          display: inline-block;
          text-align: center;
          }
+         .single-features h2 {
+         font-size: 1.4em;
+         }
          .footernav-submenu{
          text-align: center;
          }
+         .img-scale-2{
+           margin-top: 2em;
+           margin-bottom: 0 !important;
          }
-         .scroll:before{
-  content: '▾';
-  color: #fff;
-  position: absolute;
-  /*opacity: 0.7;*/
-  background: #000;
-  font-size: 30px;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  border-radius: 50%;
-  /*bottom: 20px;*/
-  left: 50%;
-  animation: bounce 1s ease infinite;
-}
-
-@keyframes bounce {
-  50% {
-    transform: translateY(-50%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-b, strong {
-    font-size: 1.19em;
-}
-/*.icon-scroll,
-.icon-scroll:before{
-  position: absolute;
-  left: 50%;
-}
-  .icon-scroll{
-
-  width: 40px;
-  height: 70px;
-  margin-left: -20px;
-  top: 50%;
-  margin-top: -35px;
-  box-shadow: inset 0 0 0 1px #fff;
-  border-radius: 25px;
-  }
-  .icon-scroll:before{
-    content: '';
-    width: 8px;
-    height: 8px;
-    background: #fff;
-    margin-left: -4px;
-    top: 8px;
-    border-radius: 4px;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-name: scroll;
-  }
-  @keyframes scroll{
-    0%{
-      opacity: 1;
-    }
-
-    100%{
-      opacity: 0;
-      transform: translateY(46px);
-    }
-  }*/
-
-
+         .scroll::before{
+           left: 44%;
+         }
+         }
+         /*medium size screen ipad landscape and pro portrait*/
+         @media only screen and (min-width:1024px) and (max-width:1199px) {
+         .set-min-height {
+           min-height: 18.7em;
+          }
+         }
 
       </style>
    </head>
@@ -456,7 +477,7 @@ b, strong {
                      <div class="navbar-collapse collapse custom-hover custom-hover-effects">
                         <ul class="nav navbar-nav navbar-right">
                            <li class="active">
-                              <a class="smoth-scroll" href="index.html">
+                              <a href="index.html">
                                  Home
                                  <div class="ripple-wrapper"></div>
                               </a>
@@ -475,13 +496,13 @@ b, strong {
          </div>
       </header>
       <!-- Landing  -->
-      <section id="our-team" style="padding-top:3em;    padding-bottom: 0.28em;">
+      <section id="survey-cards">
          <div class="container">
             <div class="row">
-               <div class="col-md-3 col-sm-6 wow fadeInDown animated" data-wow-duration="500ms" style="visibility: visible; animation-duration: 500ms; animation-name: fadeInDown;">
+               <div class="col-md-3 col-sm-6">
                   <article class="team-mate box-mrgn-btm" style="box-shadow: 6px 5px 4px -1px rgba(90, 91, 95, 0.83);">
                      <div class="member-photo" style="padding: 1em;background: #000;">
-                        <img class="img-responsive" src="images\bg\digitalist.svg" alt="Alok Nair Founder Digisquire:aloknair@digisquire.co" style="height: 100px;">
+                        <img class="img-responsive" src="images\bg\digitalist.svg" alt="Alok Nair Founder Digisquire:aloknair@digisquire.co" style="height: 45px;">
                      </div>
                      <div class="member-info set-min-height" style="border:  1px solid rgb(239, 171, 31);    background-color: rgb(239, 171, 31);">
                         <p>The hard reality is that a <b>lack of
@@ -492,12 +513,12 @@ b, strong {
                      </div>
                   </article>
                </div>
-               <div class="col-md-3 col-sm-6 wow fadeInDown animated" data-wow-duration="500ms" style="visibility: visible; animation-duration: 500ms; animation-name: fadeInDown;">
+               <div class="col-md-3 col-sm-6">
                   <article class="team-mate box-mrgn-btm" style="box-shadow: 6px 5px 4px -1px rgba(90, 91, 95, 0.83);">
-                     <div class="member-photo" style="padding: 1em;background: #ed1c24;" >
-                        <img class="img-responsive" src="images\bg\cio_logo.svg" alt="Alok Nair Founder Digisquire:aloknair@digisquire.co" style="height: 100px;">
+                     <div class="member-photo" style="padding-top: 0.2em;background: #ed1c24;height: 77px;" >
+                        <img class="img-responsive" src="images\bg\cio_logo.svg" alt="Alok Nair Founder Digisquire:aloknair@digisquire.co" style="height: 75px;">
                      </div>
-                     <div class="member-info set-min-height" style="border-top: 1px solid #fff;background-color: #ed1c24;">
+                     <div class="member-info set-min-height" style="border-top:1px solid #fff;background-color: #ed1c24;color: #fff;">
                         <p><b>UI/UX</b> designers and
                            developers are one of the
                            <b>TOP 10</b> skills required for
@@ -506,12 +527,12 @@ b, strong {
                      </div>
                   </article>
                </div>
-               <div class="col-md-3 col-sm-6 wow fadeInDown animated" data-wow-duration="500ms" style="visibility: visible; animation-duration: 500ms; animation-name: fadeInDown;">
+               <div class="col-md-3 col-sm-6">
                   <article class="team-mate box-mrgn-btm" style="box-shadow: 6px 5px 4px -1px rgba(90, 91, 95, 0.83);">
                      <div class="member-photo">
-                        <img class="img-responsive" src="images\bg\logo_cc.svg" alt="Alok Nair Founder Digisquire:aloknair@digisquire.co" style="height: 131px;border: 1px solid #6e0438;border-bottom: none;padding-left: 0.5em;padding-right: 0.5em;">
+                        <img class="img-responsive" src="images\bg\logo_cc.svg" alt="Alok Nair Founder Digisquire:aloknair@digisquire.co" style="height: 77px;border: 1px solid rgba(110, 4, 56, 0.38);border-bottom: none;padding-left: 0.5em;padding-right: 0.5em;">
                      </div>
-                     <div class="member-info set-min-height" style="border: 1px solid  #6e0438;">
+                     <div class="member-info set-min-height" style="border: 1px solid  rgba(110, 4, 56, 0.38);">
                         <p><b>77%</b>
                            of companies consider
                            <b>missing digital skills</b> as
@@ -521,10 +542,10 @@ b, strong {
                      </div>
                   </article>
                </div>
-               <div class="col-md-3 col-sm-6 wow fadeInDown animated" data-wow-duration="500ms" style="visibility: visible; animation-duration: 500ms; animation-name: fadeInDown;">
+               <div class="col-md-3 col-sm-6">
                   <article class="team-mate box-mrgn-btm" style="box-shadow: 2px 5px 4px -1px rgba(90, 91, 95, 0.83);">
                      <div class="member-photo">
-                        <img class="img-responsive" src="images\bg\deloitte.svg" alt="Alok Nair Founder Digisquire:aloknair@digisquire.co" style="height: 131px;background: #000;
+                        <img class="img-responsive" src="images\bg\deloitte.svg" alt="Alok Nair Founder Digisquire:aloknair@digisquire.co" style="height: 77px;background: #000;
                            padding: 0.5em;">
                      </div>
                      <div class="member-info" style="background-color: #86bc25;border: 1px solid #86bc25;">
@@ -539,12 +560,12 @@ b, strong {
                </div>
             </div>
             <div class="row box-mrgn-btm" style="margin-top: 1.2em;">
-               <div class="col-md-3 col-sm-6">
+               <div class="col-md-3 col-sm-4">
                   <div class="member-photo">
                      <img class="img-responsive" src="images\bg\microsoftr.png" alt="" style="padding: 0.5em;">
                   </div>
                </div>
-               <div class="col-md-9 col-sm-6" style="margin-top:0.6em;">
+               <div class="col-md-9 col-sm-8" style="margin-top:0.6em;">
                   <div class="member-info" style="box-shadow: 6px 5px 4px -1px rgba(90, 91, 95, 0.83);background-color: rgba(5, 166, 239, 0.76);">
                      <p><b>50%</b>
                         of organisations <b>prioritise
@@ -557,29 +578,34 @@ b, strong {
          </div>
 
       </section>
-      <div class="scroll"></div>
+      <a class="smoth-scroll scroll" href="#features"></a>
       <!-- new section -->
-      <section id="features" style="margin-top:2em;">
+      <section id="features" style="padding-top: 3em;">
          <div class="container">
+           <div class="row">
+             <div class="section-title col-sm-12 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="300ms">
+                    <h1>Let's kickstart your digital transformation journey with <span class="ds-title">digiSquire</span></h1>
+             </div>
+           </div>
             <div class="row">
                <div class="single-features">
-                  <div class="panel-img col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                     <img style="min-height: 23.7em;"src="images/bg/part-5.jpg" class="img-responsive" alt="">
+                  <div class="panel-img col-sm-5 wow fadeInLeft" data-wow-duration="800ms" data-wow-delay="400ms">
+                     <img src="images/bg/part-5.jpg" class="img-responsive img-scale" alt="">
                   </div>
-                  <div class=" panel-text col-sm-7 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                     <h2 style="font-family: 'orbitron',sans-serif;font-size: 2em;">Partners in Digital Transformation</h2>
+                  <div class=" panel-text col-sm-7 wow fadeInRight" data-wow-duration="800ms" data-wow-delay="300ms">
+                     <h2>Partners in Digital Transformation</h2>
                      <P style="font-family: 'Open Sans',sans-serif;text-align:justify;">Bridge your gaps in the Digital Transformation journey through our expertise. We have extensive experience in executing Agile projects and are experts in Front End technologies. We partner with companies implementing digital transformation program for themselves or their clients. We are also building skills in niche technology areas of Microsoft Dynamics and deep expertise in DevOps.</P>
                      <a href="knowUsMore.html" class="hvr-icon-wobble-horizontal read-w3ls">Know more</a>
                   </div>
                </div>
                <div class="single-features">
-                  <div class=" panel-text col-sm-7 align-right wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                     <h2 style="font-family: 'orbitron',sans-serif;font-size: 1.87em;">Digital Transformation for Companies</h2>
+                  <div class=" panel-text col-sm-7 align-right wow fadeInLeft" data-wow-duration="800ms" data-wow-delay="400ms">
+                     <h2>Digital Transformation for Companies</h2>
                      <P style="font-family: 'Open Sans',sans-serif;text-align:justify;">Today if your systems and processes are not digitised you are probably having a lot of operational slack. It's time to catapult your business to a higher league. We help transform your business so that you have an improved operational efficiency and thereby increase your bottomline.</P>
                      <a href="knowUsMore.html" class="hvr-icon-wobble-horizontal read-w3ls">Know more</a>
                   </div>
-                  <div class="panel-img col-sm-5 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                     <img src="images/bg/part-4.jpg" class="img-responsive" alt="">
+                  <div class="panel-img col-sm-5 wow fadeInRight" data-wow-duration="800ms" data-wow-delay="300ms">
+                     <img src="images/bg/part-4.jpg" class="img-responsive img-scale-2" alt="">
                   </div>
                </div>
             </div>
@@ -625,6 +651,7 @@ b, strong {
       <!-- All Javascript Plugins  -->
       <script type="text/javascript" src="js/jquery.min.js"></script>
       <script type="text/javascript" src="js/bocg.js"></script>
+      <script type="text/javascript" src="js/wow.min.js"></script>
       <!-- Main Javascript File  -->
       <script type="text/javascript" src="js/home.js"></script>
    </body>

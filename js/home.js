@@ -35,11 +35,8 @@
 				  $('#eId').addClass('email-load');
 			}
 		});
-		//Script to Activate the Carousel
-		$('.carousel').carousel({
-			interval: 6000, //changes the speed
-			pause: "hover"
-		})
+		//Initiat WOW JS
+		new WOW().init();
 		/* Mobile Navigation Hide or Collapse on Click */
 		$(document).on('click', '.navbar-collapse.in', function (e) {
 			if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
@@ -50,6 +47,14 @@
 			target: '.navbar-collapse',
 			offset: 195
 
+		});
+		/* Smooth Scroll */
+		$('a.smoth-scroll').on("click", function (e) {
+		    var anchor = $(this);
+		    $('html, body').stop().animate({
+		        scrollTop: $(anchor.attr('href')).offset().top - 50
+		    }, 3000);
+		    e.preventDefault();
 		});
 		/* Google Map */
 		 $('#my-address').gMap({
