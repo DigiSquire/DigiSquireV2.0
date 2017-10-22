@@ -26,15 +26,18 @@
 		// Script for horizontal timeline heading css
 		$("#tl1").hover(function () {
 		    $("#tl11").toggleClass("tl-year2");
+				 $("#tl22").toggleClass("tl-year2pm-sftrt");
 		});
 		$("#tl2").hover(function () {
-		    $("#tl22").toggleClass("tl-year2");
+		    $("#tl22").toggleClass("tl-year2pm");
 		});
 		$("#tl3").hover(function () {
 		    $("#tl33").toggleClass("tl-year2");
+				 $("#tl22").toggleClass("tl-year2pm-sftlt");
 		});
 		$("#tl4").hover(function () {
 		    $("#tl44").toggleClass("tl-year2");
+				 $("#tl22").toggleClass("tl-year2pm-sftlt");
 		});
 		/* Smooth Scroll */
 		$('a.smoth-scroll').on("click", function (e) {
