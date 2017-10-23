@@ -181,7 +181,7 @@ body.loaded #preloader {
 	margin: -75px 0 0 -75px;
 	border-radius: 50%;
 	border: 3px solid transparent;
-	border-top-color: #ff8800;
+	border-top-color: #e4681f;
 	-webkit-animation: spin 2s linear infinite;
 	animation: spin 2s linear infinite;
 }
@@ -259,7 +259,7 @@ body.loaded #preloader {
 
 .scroll-to-top:hover,
 .scroll-to-top:focus {
-	background-color: #ff8800;
+	background-color: #e4681f;
 	color: #ffffff;
 }
 
@@ -481,7 +481,7 @@ body.loaded #preloader {
 /*custom hover effects*/
 
 .custom-hover-effects a::after {
-	background-color: #ff8000;
+	background-color: #e4681f;
 	content: "";
 	height: 3px;
 	width: 100%;
@@ -628,7 +628,7 @@ ul.sub-menu {
 }
 
 .digisquire-credit a {
-	color: #ff8800;
+	color: #e4681f;
 	font-weight: 600;
 }
 
@@ -1931,7 +1931,7 @@ Blog Default
 	border-left-style: solid;
 	border-left-width: 1px;
 	height: 100%;
-	border-left-color: #ff8800;
+	border-left-color: #e4681f;
 	left: 50%;
 	margin-left: -2px;
 }
@@ -2029,7 +2029,7 @@ a.read-more:hover {
 
 .icon-wrapper {
 	display: inline-block;
-	background-color: #ff8800;
+	background-color: #e4681f;
 	color: #fff;
 	padding: 25px;
 	box-shadow: 0 0 0 5px rgba(0, 0, 0, .1) inset;

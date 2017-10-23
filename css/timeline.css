@@ -82,7 +82,7 @@ body {
           transform: translate3d(0, 0, 0) translateY(25px);
   position: relative;
   z-index: 1;
-  text-align: justify;
+  text-align: left;
   width: 100%;
   top: 30%;
   opacity: 0;

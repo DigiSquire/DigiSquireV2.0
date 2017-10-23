@@ -108,7 +108,7 @@ li {
 	margin: -75px 0 0 -75px;
 	border-radius: 50%;
 	border: 3px solid transparent;
-	border-top-color: #ff8800;
+	border-top-color: #e4681f;
 	-webkit-animation: spin 2s linear infinite;
 	animation: spin 2s linear infinite;
 }
@@ -614,7 +614,7 @@ a.read-w3ls:hover {
 		background: #333;
 	}
 	.navigation-background .navbar-toggle .icon-bar {
-		background: #ff8800;
+		background: #e4681f;
 	}
 	.navbar-toggle {
 		margin-right: 0px;
@@ -658,7 +658,7 @@ a.read-w3ls:hover {
 /* digisquire Credit */
 
 .digisquire-credit a {
-	color: #ff8800;
+	color: #e4681f;
 	font-weight: 600;
 }
 

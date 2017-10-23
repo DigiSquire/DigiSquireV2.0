@@ -77,9 +77,6 @@
 			}, 800);
 			return false;
 		});
-		//Initiat WOW JS
-		new WOW().init();
-
 	});
 
 })(jQuery);
