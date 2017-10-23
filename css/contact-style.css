@@ -7,8 +7,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ::selection {
-    background-color: #333;
-    color: #ffffff;
+	background-color: #3297fd;
+	color: #ffffff;
+}
+::-moz-selection {
+	background-color: #3297fd;
+	color: #ffffff;
 }
 /*-- about --*/
 .about,.gallery,.services,.team,.agile-dot,.subscribe,.contact{
