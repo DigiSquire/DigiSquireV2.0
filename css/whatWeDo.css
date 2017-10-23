@@ -636,6 +636,9 @@ letter-spacing: 1px;
 	.footer-section p {
 		text-align: center !important;
 	}
+	.footernav-submenu {
+    text-align: center;
+}
 }
 
 .digisquire-credit a {
