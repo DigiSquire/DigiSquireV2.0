@@ -57,24 +57,7 @@
          .about-team .title h1 {
          color: #fff;
          }
-         .member-photo {
-         overflow: hidden;
-         position: relative;
-         }
-         .member-photo img {
-         -webkit-transition: all 0.6s ease 0s;
-         -moz-transition: all 0.6s ease 0s;
-         -o-transition: all 0.6s ease 0s;
-         transition: all 0.6s ease 0s;
-         border-radius: 2em;
-         }
-         .member-photo:hover img {
-         -webkit-transform: scale(1.2);
-         -moz-transform: scale(1.2);
-         -ms-transform: scale(1.2);
-         -o-transform: scale(1.2);
-         transform: scale(1.2);
-         }
+
          .member-title {
          border-bottom-right-radius: 45px;
          box-shadow: 0px 16px 22px 0px rgba(255, 136, 0, 0.1);
@@ -82,36 +65,7 @@
          padding: 10px 15px;
          background: #ffffff;
          }
-         .member-photo .mask {
-         background-color: rgba(221, 221, 220, 0.47);
-         position: absolute;
-         text-align: center;
-         height: 100%;
-         width: 100%;
-         left: 0;
-         top: 0;
-         opacity: 0;
-         filter: alpha(opacity=0);
-         -webkit-transition: all 600ms ease-out 0s;
-         -moz-transition: all 600ms ease-out 0s;
-         -o-transition: all 600ms ease-out 0s;
-         transition: all 600ms ease-out 0s;
-         -webkit-transform: rotateY(180deg) scale(0.5,0.5);
-         -moz-transform: rotateY(180deg) scale(0.5,0.5);
-         -ms-transform: rotateY(180deg) scale(0.5,0.5);
-         -o-transform: rotateY(180deg) scale(0.5,0.5);
-         transform: rotateY(180deg) scale(0.5,0.5);
-         }
-         .member-photo:hover .mask {
-         cursor: pointer;
-         opacity: 1;
-         filter: alpha(opacity=100);
-         -webkit-transform: rotateY(0deg) scale(1,1);
-         -moz-transform: rotateY(0deg) scale(1,1);
-         -ms-transform: rotateY(0deg) scale(1,1);
-         -o-transform: rotateY(0deg) scale(1,1);
-         transform: rotateY(0deg) scale(1,1);
-         }
+
          .team-mate h4 {
          font-family: 'Poppins',sans-serif;
          color: #686868;
@@ -557,6 +511,27 @@
          -ms-transition: 0.5s all;
          font-size: 16px;
          }
+         .team-lnkd{
+           font-size: 0.7em;
+    background: #006DC0;
+    padding: 0.2em;
+    color: #fff;
+    border-radius: 15%;
+         }
+         .linked-in a{
+           -webkit-transition: all 0.6s ease 0s;
+  -moz-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
+  transition: all 0.6s ;
+         }
+         .linked-in a:hover{
+           -webkit-transform: scale(1.2);
+-moz-transform: scale(1.2);
+-ms-transform: scale(1.2);
+-o-transform: scale(1.2);
+transform: scale(1.2);
+         }
+
          a.read-w3ls:hover {
          background: #bc0023;
          transition: 0.5s all;
@@ -669,41 +644,23 @@
                </div>
             </div>
             <div class="row" style="margin-bottom: 4em;">
-               <div class="col-md-6 col-sm-6 wow fadeInDown" data-wow-duration="500ms">
+              <div class=" panel-text col-sm-3 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="600ms">
+                <div class="">
+                    <img class="img-responsive" src="images\bg\inhouse.png" alt="">
+                </div>
+              </div>
+               <div class=" col-sm-6 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="300ms">
                  <div class="">
-                     <img class="img-responsive" src="images\bg\ds.png" alt="Alok Nair Founder Digisquire:aloknair@digisquire.co">
+                     <img class="img-responsive" src="images\bg\ds1.png" alt="">
                  </div>
 
                </div>
-               <div class=" panel-text col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                   <h2 style="font-family: 'orbitron',sans-serif;font-size: 2em;color:#333;">Alok Nair</h2>
-                   <p style="font-family: 'orbitron',sans-serif;font-size: 1.1em;">Founder</p>
-                   <P style="font-family: 'Open Sans',sans-serif;text-align:justify;">Alok has 14 years of extensive experience in the IT industry having executed
-complex projects and built large teams ground up. Having worked in an Agile
-environment, he thoroughly understands the digital landscape and has a strong
-focus on helping customers succeed.</P>
+               <div class=" col-sm-3 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="800ms">
+                 <div class="">
+                     <img class="img-responsive" src="images\bg\outsource.png" alt="">
+                 </div>
+
                </div>
-            </div>
-            <div class="row">
-              <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="200ms">
-                 <article class="team-mate">
-                    <div class="member-photo">
-                       <img class="img-responsive" src="images/clients/gauravChattur.jpg" alt="Gaurav Chattur Advisor  &#38; Mentor for Digisquire">
-                       <div class="mask">
-                          <ul class="clearfix">
-                             <li><a target="_blank" href="https://www.linkedin.com/in/gauravchattur"><i class="fa fa-linkedin"></i></a></li>
-                          </ul>
-                       </div>
-                    </div>
-                 </article>
-              </div>
-              <div class=" panel-text col-sm-7 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                  <h2 style="font-family: 'orbitron',sans-serif;font-size: 2em;color:#333;">Gaurav Chattur</h2>
-                  <p style="font-family: 'orbitron',sans-serif;font-size: 1.1em;">Advisor,Mentor</p>
-                  <P style="font-family: 'Open Sans',sans-serif;text-align:justify;">Gaurav is currently the MD (Asia-Pacific) of Catenon Worldwide, an Executive
-Search firm. An ISB grad, Gaurav brings with him an in depth understanding of
-business strategy, customer behaviour and management expertise.</P>
-              </div>
             </div>
          </div>
       </section>
@@ -721,18 +678,13 @@ business strategy, customer behaviour and management expertise.</P>
                <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="500ms">
                   <article class="team-mate">
                      <div class="member-photo">
-                        <img class="img-responsive" src="images/clients/aloknair.jpg" alt="Alok Nair Founder Digisquire:aloknair@digisquire.co">
-                        <div class="mask">
-                           <ul class="clearfix">
-                              <li><a target="_blank" href="https://www.linkedin.com/in/alok-nair-b774b135/"><i class="fa fa-linkedin"></i></a></li>
-                           </ul>
-                        </div>
+                        <img style="border-radius: 10%;width: 242px;height: 215px;" class="img-responsive" src="images/clients/rsz_picture4.png" alt="Alok Nair Founder Digisquire:aloknair@digisquire.co">
                      </div>
                   </article>
                </div>
                <div class=" panel-text col-sm-7 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                   <h2 style="font-family: 'orbitron',sans-serif;font-size: 2em;color:#333;">Alok Nair</h2>
-                   <p style="font-family: 'orbitron',sans-serif;font-size: 1.1em;">Founder</p>
+                   <h2 style="font-family: 'orbitron',sans-serif;font-size: 2em;color:#333;">Alok Nair <span><a target="_blank" href="https://www.linkedin.com/in/alok-nair-b774b135/"><i class="team-lnkd fa fa-linkedin"></i></a></span></h2>
+                   <p style="font-family: 'orbitron',sans-serif;font-size: 1.1em;">Founder, CEO</p>
                    <P style="font-family: 'Open Sans',sans-serif;text-align:justify;">Alok has 14 years of extensive experience in the IT industry having executed
 complex projects and built large teams ground up. Having worked in an Agile
 environment, he thoroughly understands the digital landscape and has a strong
@@ -743,18 +695,13 @@ focus on helping customers succeed.</P>
               <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="200ms">
                  <article class="team-mate">
                     <div class="member-photo">
-                       <img class="img-responsive" src="images/clients/gauravChattur.jpg" alt="Gaurav Chattur Advisor  &#38; Mentor for Digisquire">
-                       <div class="mask">
-                          <ul class="clearfix">
-                             <li><a target="_blank" href="https://www.linkedin.com/in/gauravchattur"><i class="fa fa-linkedin"></i></a></li>
-                          </ul>
-                       </div>
+                       <img style="border-radius: 10%;width: 242px;height: 215px;"  class="img-responsive" src="images/clients/gauravChattur.jpg" alt="Gaurav Chattur Advisor  &#38; Mentor for Digisquire">
                     </div>
                  </article>
               </div>
               <div class=" panel-text col-sm-7 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                  <h2 style="font-family: 'orbitron',sans-serif;font-size: 2em;color:#333;">Gaurav Chattur</h2>
-                  <p style="font-family: 'orbitron',sans-serif;font-size: 1.1em;">Advisor,Mentor</p>
+                  <h2 style="font-family: 'orbitron',sans-serif;font-size: 2em;color:#333;">Gaurav Chattur <span class="linked-in"><a target="_blank" href="https://www.linkedin.com/in/gauravchattur"><i class="team-lnkd fa fa-linkedin"></i></a></span></h2>
+                  <p style="font-family: 'orbitron',sans-serif;font-size: 1.1em;">Advisor, Mentor</p>
                   <P style="font-family: 'Open Sans',sans-serif;text-align:justify;">Gaurav is currently the MD (Asia-Pacific) of Catenon Worldwide, an Executive
 Search firm. An ISB grad, Gaurav brings with him an in depth understanding of
 business strategy, customer behaviour and management expertise.</P>
