@@ -40,8 +40,9 @@ a {
 	transition: 300ms;
 }
 
-ul {
-	list-style: none;
+ul, li {
+    margin: 0;
+    padding: 0;
 }
 
 h1,
@@ -324,6 +325,7 @@ body.loaded #preloader {
 	-webkit-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
 	background: #fff;
+	    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.48);
 }
 
 .navigation-background .logo {
@@ -345,7 +347,7 @@ body.loaded #preloader {
 
 #header {
 	margin-bottom: 0;
-	padding: 30px 0 60px 0;
+	    padding: 4em 0 0 0;
 }
 
 #header .navbar-inverse .container {
@@ -600,16 +602,25 @@ ul.sub-menu {
 
 .footer-section {
 	background: #000;
-	padding: 80px 0px;
-	color: #f8f8f8;
+	color: #999;
+	padding-top: 45px;
+	padding-bottom: 50px;
 }
-
+.footernav-submenu {
+	font-size: 13px;
+line-height: 24px;
+letter-spacing: 1px;
+    list-style: none;
+}
 .footer-section p {
 	font-size: 14px;
 }
 
 .footer-section a {
-	color: #ffffff;
+    color: #999;
+}
+.footer-section a:hover {
+    color: #fff;
 }
 
 @media only screen and (max-width: 991px) {
@@ -638,7 +649,9 @@ ul.sub-menu {
 
 .set-social-icons {
 	margin-bottom: -58px;
-	margin-top: 0px !important;
+margin-top: 0px !important;
+border-top: 1px solid #333;
+padding-top: 1em;
 }
 
 .social-icon {
@@ -665,10 +678,11 @@ ul.sub-menu {
 
 .social-icon li a {
 	display: block;
-	width: 40px;
-	text-align: center;
-	font-size: 21px;
-	transition: all 0.3s ease-in-out;
+width: 40px;
+text-align: center;
+font-size: 21px;
+color: #fff;
+transition: all 0.3s ease-in-out;
 }
 
 .social-icon li a .fa {
