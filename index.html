@@ -22,7 +22,7 @@
       <!-- Main CSS Stylesheet -->
       <link rel="stylesheet" type="text/css" href="css/homeCl.css">
       <!-- Google Web Fonts  -->
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans|Orbitron|Poppins|Roboto" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans|Orbitron|Poppins|Changa" rel="stylesheet">
       <!-- HTML5 shiv and Respond.js support IE8 or Older for HTML5 elements and media queries -->
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -162,7 +162,7 @@
          }
          .pos-read-lnk{
          position: absolute;
-         bottom: 10px;
+         bottom: 17px;
          font-weight: 600;
          font-family: 'Open Sans',sans-serif;
          color: #333;
@@ -170,11 +170,11 @@
          right: 8px;
          }
          .pos-read-lnk-ms{
-         bottom: 0;
+         bottom: 11px;
          }
          .box-pad{
-         padding-bottom: 30px;
-         padding-top: 6px;
+         padding-bottom: 45px;
+         padding-top: 4px;
          padding-left: 10px;
          padding-right: 10px;
          }
@@ -184,7 +184,7 @@
          margin-left: 2px;
          }
          .set-min-height{
-         min-height: 15em;
+         min-height: 17.7em;
          }
          .box-mrgn-btm {
          margin-bottom: 0.4em;
@@ -208,8 +208,8 @@
          padding-bottom: 1.28em;
          }
          #survey-cards p{
-         font-size: 0.99em;
-         font-family: 'Open Sans',sans-serif;
+         font-size: 1.15em;
+         font-family: 'Changa',sans-serif;
          }
          .section-title h1{
          font-family: 'Orbitron', sans-serif;
@@ -306,6 +306,9 @@
          .footer-section a:hover {
          color: #fff;
          }
+         .ms-survey-content{
+               padding-bottom: 40px;
+         }
          /* Responsive */
          @media only screen and (min-width: 767px) and (max-width: 991px) {
          .navigation-menu .navbar-nav li a {
@@ -313,19 +316,31 @@
          font-size: 12px;
          }
          .pos-read-lnk {
-         bottom: 2em;
+         bottom: 1.18em;
          }
          .pos-read-lnk-ms {
-         bottom: 0;
+         bottom: 11px;
          }
          .box-pad {
-         padding-bottom: 25px;
+         padding-bottom: 45px;
          }
+         .set-min-height {
+           min-height: 13.75em;
+        }
          }
          @media only screen and (min-width: 992px) and (max-width: 1200px) {
          .set-min-height {
-         min-height: 19em;
+         min-height: 21.7em;
          }
+         .pos-read-lnk {
+            bottom: 17px;
+        }
+        .pos-read-lnk-ms {
+            bottom: 11px;
+        }
+        .ms-survey-content{
+              padding-bottom: 16px;
+        }
          }
          @media only screen and (max-width: 991px) {
          .footer-section p {
@@ -367,6 +382,8 @@
          .set-min-height {
          min-height: 0;
          }
+         .pos-read-lnk {
+    bottom: 11px;}
          .ds-title{
          font-size: 1.6em;
          }
@@ -410,6 +427,8 @@
          }
          a.read-w3ls {
          background: #e4681f;
+         font-family: 'Changa',sans-serif;
+             font-size: 1.03em;
          transition: 0.5s all;
          -webkit-transition: 0.5s all;
          -o-transition: 0.5s all;
@@ -476,12 +495,93 @@
          /*medium size screen ipad landscape and pro portrait*/
          @media only screen and (min-width:1024px) and (max-width:1199px) {
          .set-min-height {
-         min-height: 18.7em;
+         min-height: 21.7em;
          }
          .box-pad {
-         padding-bottom: 25px;
+         padding-bottom: 45px;
          }
          }
+         .read {
+           position: relative;
+    z-index: 9;
+    float: right;
+    font-size: 0.88em;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    padding-left: 16px;
+    padding-right: 22px;
+    padding-right: 0px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.79);
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    letter-spacing: 3px;
+    font-family: 'Changa', sans-serif;
+    margin-right: -4px;
+    border-right: 8px solid rgba(0,0,0,.15);
+    border-radius: 0 3px 0 0;
+    -webkit-transform: perspective(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    -moz-transform: perspective(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    -o-transform: perspective(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    -ms-transform: perspective(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    transform: perspective(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+.read:hover {
+    opacity: .8;
+}
+.read:hover {
+    margin-right: 0px;
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(-7deg) rotateZ(0deg);
+    -moz-transform: perspective(120px) rotateX(0deg) rotateY(-7deg) rotateZ(0deg);
+    -o-transform: perspective(120px) rotateX(0deg) rotateY(-7deg) rotateZ(0deg);
+    -ms-transform: perspective(120px) rotateX(0deg) rotateY(-7deg) rotateZ(0deg);
+    transform: perspective(120px) rotateX(0deg) rotateY(-7deg) rotateZ(0deg);
+}
+.read:before {
+	content: '';
+	position: absolute;
+	margin-left: -16px;
+	margin-top: -14px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 44px 0 0 15px;
+	border-color: transparent transparent transparent #F7F8F9;
+}
+.read1:before {
+	border-color: transparent transparent transparent rgb(239, 171, 31);
+}
+.read2:before {
+	border-color: transparent transparent transparent #ed1c24;
+}
+.read3:before {
+	border-color: transparent transparent transparent #6e0438;
+}
+.read4:before {
+	border-color: transparent transparent transparent #86bc25;
+}
+.read5:before {
+	border-color: transparent transparent transparent #03A9F4;
+}
+ .read:after {
+   content: '';
+     position: absolute;
+     right: 0;
+     bottom: 0;
+     margin-right: -8px;
+     margin-bottom: -12px;
+     width: 0;
+     height: 0;
+     border-style: solid;
+     border-width: 12px 11px 0 0;
+     border-color: rgba(0, 0, 0, 0.5) transparent transparent transparent;
+}
+
       </style>
       <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108506952-1"></script>
@@ -540,37 +640,39 @@
          <div class="container">
             <div class="row">
                <div class="col-md-3 col-sm-6">
-                  <article class="team-mate box-mrgn-btm" style="box-shadow: 6px 5px 4px -1px rgba(90, 91, 95, 0.83);">
+                  <article class="team-mate box-mrgn-btm" style="box-shadow: 0px 5px 4px 1px rgba(90, 91, 95, 0.83);">
                      <div class="member-photo" style="padding: 1em;background: #000;">
                         <img class="img-responsive" src="images\bg\digitalist.svg" alt="Alok Nair Founder Digisquire:aloknair@digisquire.co" style="height: 45px;">
                      </div>
-                     <div class="member-info box-pad set-min-height" style="border:  1px solid rgb(239, 171, 31);    background-color: rgb(239, 171, 31);">
+                     <div class="member-info box-pad set-min-height">
                         <p>The hard reality is that a <b>lack of
                            digital skills is the number
                            one barrier</b> organisations face for
                            digital transformation.
                         </p>
-                        <a href="http://www.digitalistmag.com/future-of-work/2017/09/26/dont-let-skills-gap-jeopardize-digital-transformation-map-out-skill-development-plan-05365792" target="_blank" class="hvr-icon-wobble-horizontal pos-read-lnk">Read Full Article</a>
+                        <a href="http://www.digitalistmag.com/future-of-work/2017/09/26/dont-let-skills-gap-jeopardize-digital-transformation-map-out-skill-development-plan-05365792" target="_blank" class="pos-read-lnk"><div class="read read1">
+                                    Read Full Article </div></a>
                      </div>
                   </article>
                </div>
                <div class="col-md-3 col-sm-6">
-                  <article class="team-mate box-mrgn-btm" style="box-shadow: 6px 5px 4px -1px rgba(90, 91, 95, 0.83);">
+                  <article class="team-mate box-mrgn-btm" style="box-shadow: 0px 5px 4px 1px rgba(90, 91, 95, 0.83);">
                      <div class="member-photo" style="padding-top: 0.2em;background: #ed1c24;height: 77px;" >
                         <img class="img-responsive" src="images\bg\cio_logo.svg" alt="Alok Nair Founder Digisquire:aloknair@digisquire.co" style="height: 75px;">
                      </div>
-                     <div class="member-info box-pad set-min-height" style="border-top:1px solid #fff;background-color: #ed1c24;color: #fff;">
+                     <div class="member-info box-pad set-min-height" style="color: #333;">
                         <p><b>UI/UX</b> designers and
                            developers are one of the
                            <b>TOP 10</b> skills required for
                            Digital Transformation.
                         </p>
-                        <a href="https://www.cio.com/article/3164125/hiring/10-it-skills-that-employers-need-in-2017.html#slide6" target="_blank" class="hvr-icon-wobble-horizontal pos-read-lnk">Read Full Article</a>
+                        <a href="https://www.cio.com/article/3164125/hiring/10-it-skills-that-employers-need-in-2017.html#slide6" target="_blank" class="pos-read-lnk"><div class="read read2">
+                                    Read Full Article </div></a>
                      </div>
                   </article>
                </div>
                <div class="col-md-3 col-sm-6">
-                  <article class="team-mate box-mrgn-btm" style="box-shadow: 6px 5px 4px -1px rgba(90, 91, 95, 0.83);">
+                  <article class="team-mate box-mrgn-btm" style="box-shadow: 0px 5px 4px 1px rgba(90, 91, 95, 0.83);">
                      <div class="member-photo">
                         <img class="img-responsive" src="images\bg\logo_cc.svg" alt="Alok Nair Founder Digisquire:aloknair@digisquire.co" style="height: 77px;border: 1px solid rgba(110, 4, 56, 0.38);border-bottom: none;padding-left: 0.5em;padding-right: 0.5em;">
                      </div>
@@ -581,24 +683,26 @@
                            the key <b>hurdle to their
                            Digital Transformation</b>.
                         </p>
-                        <a href="https://www.capgemini.com/wp-content/uploads/2017/07/the_digital_talent_gap27-09_0.pdf" target="_blank" class="hvr-icon-wobble-horizontal pos-read-lnk">Read Full Article</a>
+                        <a href="https://www.capgemini.com/wp-content/uploads/2017/07/the_digital_talent_gap27-09_0.pdf" target="_blank" class="pos-read-lnk"><div class="read read3">
+                                    Read Full Article </div></a>
                      </div>
                   </article>
                </div>
                <div class="col-md-3 col-sm-6">
-                  <article class="team-mate box-mrgn-btm" style="box-shadow: 2px 5px 4px -1px rgba(90, 91, 95, 0.83);">
+                  <article class="team-mate box-mrgn-btm" style="box-shadow: 0px 5px 4px 1px rgba(90, 91, 95, 0.83);">
                      <div class="member-photo">
                         <img class="img-responsive" src="images\bg\deloitte.svg" alt="Alok Nair Founder Digisquire:aloknair@digisquire.co" style="height: 77px;background: #000;
                            padding: 0.5em;">
                      </div>
-                     <div class="member-info box-pad" style="background-color: #86bc25;border: 1px solid #86bc25;">
+                     <div class="member-info box-pad">
                         <p><b>93%</b> of those with
                            digital strategy agree or strongly agree
                            that their objective of their digital strategy
                            is to <b>enhance customer
                            experience and engagement</b>.
                         </p>
-                        <a href="https://dupress.deloitte.com/dup-us-en/industry/financial-services/digital-transformation-in-financial-services.html" target="_blank" class="hvr-icon-wobble-horizontal pos-read-lnk">Read Full Article</a>
+                        <a href="https://dupress.deloitte.com/dup-us-en/industry/financial-services/digital-transformation-in-financial-services.html" target="_blank" class="pos-read-lnk"><div class="read read4">
+                                    Read Full Article </div></a>
                      </div>
                   </article>
                </div>
@@ -610,13 +714,14 @@
                   </div>
                </div>
                <div class="col-md-9 col-sm-8" style="margin-top:0.6em;">
-                  <div class="member-info" style="box-shadow: 6px 5px 4px -1px rgba(90, 91, 95, 0.83);background-color: rgba(5, 166, 239, 0.76);padding:15px;">
+                  <div class="member-info   ms-survey-content" style="box-shadow: 0px 1px 4px 1px rgba(90, 91, 95, 0.83);padding-top: 11px;">
                      <p><b>50%</b>
                         of organisations <b>prioritise
                         working with Service
                         Providers</b> for Skills acquisition.
                      </p>
-                     <a href="http://partner-l1.microsoft.com/rs/090-ADL-253/images/2017%20Microsoft%20Hosting%20and%20Cloud%20Study.pdf" target="_blank" class="hvr-icon-wobble-horizontal pos-read-lnk pos-read-lnk-ms">Read Full Article</a>
+                     <a href="http://partner-l1.microsoft.com/rs/090-ADL-253/images/2017%20Microsoft%20Hosting%20and%20Cloud%20Study.pdf" target="_blank" class="pos-read-lnk pos-read-lnk-ms"><div class="read read5">
+                                 Read Full Article </div></a>
                   </div>
                </div>
             </div>
@@ -638,14 +743,14 @@
                   </div>
                   <div class=" panel-text col-sm-7 wow fadeInRight" data-wow-duration="800ms" data-wow-delay="300ms">
                      <h2>Partners in Digital Transformation</h2>
-                     <P style="font-family: 'Open Sans',sans-serif;text-align:justify;">Bridge your gaps in the Digital Transformation journey through our expertise. We have extensive experience in executing Agile projects and are experts in Front End technologies. We partner with companies implementing digital transformation program for themselves or their clients. We are also building skills in niche technology areas of Microsoft Dynamics and deep expertise in DevOps.</P>
+                     <P style="font-family: 'Changa',sans-serif;text-align:justify;font-size: 1.1em">Bridge your gaps in the Digital Transformation journey through our expertise. We have extensive experience in executing Agile projects and are experts in Front End technologies. We partner with companies implementing digital transformation program for themselves or their clients. We are also building skills in niche technology areas of Microsoft Dynamics and deep expertise in DevOps.</P>
                      <a href="knowUsMore.html#partnership" class="hvr-icon-wobble-horizontal read-w3ls">Know More</a>
                   </div>
                </div>
                <div class="single-features">
                   <div class=" panel-text col-sm-7 align-right wow fadeInLeft" data-wow-duration="800ms" data-wow-delay="400ms">
                      <h2>Digital Transformation for Companies</h2>
-                     <P style="font-family: 'Open Sans',sans-serif;text-align:justify;">Today if your systems and processes are not digitised you are probably having a lot of operational slack. It's time to catapult your business to a higher league. We help transform your business so that you have an improved operational efficiency and thereby increase your bottomline.</P>
+                     <P style="font-family: 'Changa',sans-serif;text-align:justify;font-size: 1.1em">Today if your systems and processes are not digitised you are probably having a lot of operational slack. It's time to catapult your business to a higher league. We help transform your business so that you have an improved operational efficiency and thereby increase your bottomline.</P>
                      <a href="contact.html" class="hvr-icon-wobble-horizontal read-w3ls">Talk To Us</a>
                   </div>
                   <div class="panel-img col-sm-5 wow fadeInRight" data-wow-duration="800ms" data-wow-delay="300ms">
