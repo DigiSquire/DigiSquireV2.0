@@ -47,13 +47,21 @@ img {
 a:hover {
 	color: #fff;
 	text-decoration: none;
+	outline:none;
+  outline-offset: 0;
 }
 
 a:focus {
-	outline: none;
+	outline:none;
+  outline-offset: 0;
 	text-decoration: none;
 }
-
+a {
+	 -webkit-transition: 300ms;
+	 -moz-transition: 300ms;
+	 -o-transition: 300ms;
+	 transition: 300ms;
+ }
 p {
 	line-height: 32px;
 }
@@ -62,6 +70,8 @@ ul,
 li {
 	margin: 0;
 	padding: 0;
+	list-style: none;
+
 }
 
 .container {
@@ -182,80 +192,6 @@ body.loaded #preloader {
 	#home .container {
 		padding-bottom: 5px;
 	}
-}
-
-/*carousel*/
-.carousel,
-.item,
-.active {
-	height: 100%;
-}
-
-.carousel-inner {
-	height: 100%;
-}
-
-.carousel-caption {
-	color: #fff;
-	right: 0%;
-	left: 0%;
-	width: 100%;
-	bottom: 33%;
-}
-
-.item {
-	-webkit-transition: .3s;
-	transition: .3s;
-}
-
-
-/*iphone5*/
-@media only screen and (max-width: 568px) and (orientation: landscape) {
-	.carousel-caption {
-		bottom: 13%;
-		padding-top: 0px;
-		padding-bottom: 20px;
-	}
-}
-
-@media only screen and (max-width: 320px) and (orientation: portrait) {
-	.carousel-caption {
-		bottom: 24%;
-	}
-}
-
-@media only screen and (min-width: 569px) and (max-width: 750px) and (orientation: landscape) {
-	.carousel-caption {
-		bottom: 15.55%;
-	}
-}
-/*iphone6*/
-@media only screen and (max-width: 450px) and (orientation: portrait) {
-	.carousel-caption {
-		bottom: 38%;
-	}
-}
-/*ipadPro*/
-@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
-	.carousel-caption {
-		bottom: 41%;
-	}
-}
-
-@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
-	.carousel-caption {
-		bottom: 43%;
-	}
-}
-
-.fill {
-	width: 100%;
-	height: 100%;
-	background-position: center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
 }
 
 /* Icon Wobble Horizontal */
