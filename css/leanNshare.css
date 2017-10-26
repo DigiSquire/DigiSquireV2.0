@@ -541,6 +541,22 @@ border-style: solid;
 border-width: 12px 11px 0 0;
 border-color: rgba(0, 0, 0, 0.5) transparent transparent transparent;
 }
+
+
+pre {
+    padding: 24px;
+    line-height: 1.4;
+    margin-bottom: 24px;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+code, pre, samp {
+    background: #fcfcfc;
+}
+
+
 /* sm */
 @media only screen and (max-width : 992px) {
   .nav.navbar-nav.post-nav li{
@@ -559,5 +575,10 @@ border-color: rgba(0, 0, 0, 0.5) transparent transparent transparent;
     display: inline-block;
     margin-right: 15px;
   }
-
+}
+@media only screen and (min-width: 700px){
+  pre {
+      margin-left: 6px;
+      margin-right: 6px;
+  }
 }
