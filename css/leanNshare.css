@@ -1,6 +1,14 @@
 /*****************************
 Portfolio with right sidebar
 *****************************/
+body {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+}
 .padding-top {
     padding-top: 90px;
 }
@@ -18,7 +26,8 @@ b{
 blockquote {
     padding: 10px 20px;
     margin: 0 0 20px;
-    font-size: 17px;
+    font-size: 1em;
+    font-weight: bold;
     color: #333;
     border-left: none;
 }
@@ -71,8 +80,13 @@ img {
 .blog-page h4{
   text-align: center;font-size: 0.8em;color: #686868;
 }
+.blog-share {
+    margin-top: 40px;
+    display: inline-block;
+    padding: 0;
+}
 .blogger-details{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 1em;
   margin-top: 6px;
   line-height: 1.4em;
@@ -84,7 +98,7 @@ img {
   border-width: 2px;
 }
 .about-blogger{
-  font-family: 'Open Sans', sans-serif;text-align:center;padding: 0.5em;box-shadow:0px 1px 2px 0px rgba(90, 91, 95, 0.52);line-height: 1.4em;
+  font-family: 'Raleway', sans-serif;text-align:center;padding: 0.5em;box-shadow:0px 1px 2px 0px rgba(90, 91, 95, 0.52);line-height: 1.4em;
 font-size: 0.9em;
 }
 
@@ -341,7 +355,7 @@ Blog Default
     padding: 0.5em 1em;
     color: rgba(51, 51, 51, 0.91);
     margin: 0px 0px 10px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
     line-height: 2em;
 }
 .post-content a{
@@ -555,7 +569,20 @@ pre {
 code, pre, samp {
     background: #fcfcfc;
 }
-
+.scroll-to-top {
+    background-color: #e4681f;
+    display: none;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    position: fixed;
+    right: 0px;
+    bottom: 50px;
+    z-index: 999;
+}
 
 /* sm */
 @media only screen and (max-width : 992px) {

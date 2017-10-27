@@ -24,7 +24,7 @@
       <link rel="stylesheet" type="text/css" href="css/headerFooter.css">
       <link rel="stylesheet" type="text/css" href="css/leanNshare.css">
       <!-- Google Web Fonts  -->
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins|Orbitron|Roboto" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Orbitron|Raleway|Poppins" rel="stylesheet">
       <!-- HTML5 shiv and Respond.js support IE8 or Older for HTML5 elements and media queries -->
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -40,6 +40,10 @@
 }
 
       </style>
+      <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=59f34df9f08d3100120987c0&product=inline-share-buttons"></script>
+      <!-- linked -->
+      <!-- <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+<script type="IN/Share" data-counter="right"></script> -->
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108506952-1"></script>
       <script>
@@ -104,7 +108,7 @@
                        <div class="col-sm-12 col-md-12">
                           <div class="single-blog single-column">
                             <div class="post-content overflow">
-                                <h2 class="post-title bold">Kick Start you first Front-end development project</h2><div class="border"></div>
+                                <h2 class="post-title bold">Kick Start your first Front-end development project</h2><div class="border"></div>
                                 <div class="blog-page">
                                   <h4><i class="fa fa-user" aria-hidden="true"></i> Himanshu Saraswat | <i class="fa fa-calendar" aria-hidden="true"></i> Saturday,October 28,2017</h4>
                                 </div>
@@ -189,24 +193,47 @@
                                     <blockquote cite="https://www.brainyquote.com/quotes/quotes/j/jesseowens142262.html">"Find the good. It's all around you. Find it, <i><b>showcase it</b></i> and you'll start believing in it."<br><span style="float:right;"><i>-Jesse Owens</i></span></blockquote>
                                     <p>Did I hear <i>showcase</i>, yes, you need to bring all your efforts & thoughts out to the world, to know that you have arrived, for all that little leverage in your résumé, for all that inquisitive hobbyist in you, <i>you need to get your work a platform</i>.</p>
                                     <p><b>Where should I showcase my project?</b></p>
-                                    <p><img src="images\blog\Github.gif" alt="GitHub repository" style="width: 250px;left: 3%;position: relative;"><img src="images\blog\github-logo.png" alt="GitHub logo" style="width: 200px;left: 3%;position: relative;"></p><p><strong>GitHub</strong> is an amazing repository, where you can not only store your code, but you can even collaborate with other developers, get your project code reviewed by your mentors and even <i>showcase </i>,yes we are coming to the showcase part slowly.</p>
-                                    <p>When I created my first web project and wanted to share, the only thing that came to my mind was <i>Google Drive</i>, but people where not able see my code in working state and some or the other issue use to crawl in, that is when I decided to witch to GitHub.</p>
+                                    <p><img src="images\blog\Github.gif" alt="GitHub repository" style="width: 250px;left: 3%;position: relative;"><img src="images\blog\github-logo.png" alt="GitHub logo" style="width: 200px;left: 3%;position: relative;"></p><p><strong>GitHub</strong> is an amazing repository, where you can not only store your code, but you can even collaborate with other developers, get your project code reviewed by your mentors and even <i>showcase your work</i>, but before that let's get to know <strong>how to get your code to GitHub.</strong></p>
+                                    <p>When I created my first web project and wanted to share, the only thing that came to my mind was <i>Google Drive</i>, but people where not able see my code in working state and some or the other issue use to crawl in, that is when I decided to switch to GitHub.</p>
                                     <p><b>How do you store code on GitHub ?</b></p>
                                     <p>Signup on GitHub and create your first repository.<img src="images\blog\create-new-repo.png" alt="create a repository on GitHub" style="width: 700px;left: 3%;position: relative;"></p>
-                                      <p>Install GIT on your machine selecting the apprpriate version</p> <br><img src="images\blog\git-setup.JPG" alt="install GIT on local machine/worstation" style="width: 700px;left: 3%;position: relative;"><a style="float: right;background:transparent;margin:auto;margin-right:10px;
+                                      <p>Install GIT on your machine selecting the appropriate version</p> <br><img src="images\blog\git-setup.JPG" alt="install GIT on local machine/worstation" style="width: 700px;left: 3%;position: relative;"><a style="float: right;background:transparent;margin:auto;margin-right:10px;
     " href="https://git-scm.com/downloads" target="_blank" class="pos-read-lnk"><div class="read read2"style="margin-right: -22px;bottom: 0;
 "><i class="fa fa-lg fa-download" aria-hidden="true"></i>  GIT  </div></a><p>Follow the standard installation steps.<br>Now it's time to get your project some special space of its own. <strong>Clone</strong> the repository to your machine, yes it'll be empty at this moment.<br><img src="images\blog\clone-repo.png" alt="clone a repository on GitHub" style="width: 380px;left: 3%;position: relative;"></p><p>Create a folder on your workstation <i>"first amazing web-project"</i>, open the terminal window and enter:</p>
                                       <pre><code>git clone "your repository name"</code></pre>
-                                      <p>You will see some sub-folders getting updated to your project folder.<br>Copy & paste your project code to this folder &<i>"do not delete the <strong> .git </strong> folder which just got created"</i></p>
-                                      <p>Follow below steps to get your code to the online repository:<br>Open the termial window in your current project directory, yes the one which has the <i>".git"</i> folder and enter: </p><pre><code>git add .</code></pre><p>This commands will add all the folder in your project directory to your local repository & will get them ready for your very first commit.</p><p>Run the below command to check the status of your files and folders:</p>
-                                      <pre><code>git status</code></pre><p>All your files should appear in <span style="color:green;"><strong>green</strong></span> indicating they they are good to be added to the Git repository</p><p>Make your first commit :</p><pre><code>git commit -m "your commit message"</code></pre>
-                                      <p>To push the code to the remote repository use the following:</p><pre><code>git push</code></pre><p>You might be asked for authorization credentials at this step, enter the credentials for your gitHub account & that's it, your code is live for millions to collaborate, review & share.</p>
-                                      <p>Thanks for staying with me, but don't you think this was a bit tiring, though it's very important your are familiar with these basic operations, but we wanted to be steady and fast right.</p>
-                                      <p>Remember our goal is to <i>"get things done in the least possible time and in the best possible manner "</i></p><p>Here is when our cute powerful editor <b>Atom</b> will come to our rescue.</p><img src="images\blog\atom.gif" alt="create a repository on GitHub" style="width: 700px;left: 3%;position: relative;">
-
-
+                                      <p>You will see some sub-folders getting updated to your project folder.<br>Copy & paste your project code to this folder &<i> "do not delete the <strong> .git </strong> folder which just got created"</i></p>
+                                      <p><strong>Follow below steps to get your code to the remote repository:</strong><br>Open the termial window in your current project directory, yes, the one which has the <i>".git"</i> folder and enter: </p><pre><code>git add .</code></pre><p>This commands will add all the folder in your project directory to your local repository & will get them ready for your very first commit.</p><p>Run the below command to check the status of your files and folders:</p>
+                                      <pre><code>git status</code></pre><p>All your files should appear in <span style="color:green;"><strong>green</strong></span> indicating that they are good to be added to the Git repository</p><p>Make your first commit :</p><pre><code>git commit -m "your commit message"</code></pre>
+                                      <p>To push the code to remote repository enter the following:</p><pre><code>git push</code></pre><p>You might be asked for authorization credentials at this step, enter the credentials for your gitHub account & that's it, your code is live for millions to collaborate, review & share.</p>
+                                      <p>Thanks for staying with me, but don't you think this was a bit tiring, though it's very important that you are familiar with these basic operations, but we wanted to be steady and fast right.</p>
+                                      <p>Remember our goal is to <i><strong>"get things done in the least possible time and in the best possible manner "</strong></i></p><p>Here is when our cute powerful editor <b>Atom</b> will come to our rescue.</p><img src="images\blog\atom.gif" alt="create a repository on GitHub" style="width: 700px;left: 3%;position: relative;"><br><br>
+                                      <p>Atom has a very sleek integration with GitHub, which will knockout the hassle of writing commands in terminal. You can view all the files you made changes to, compare your file versions, decide which files to stage for commit in an easy to use interface.</p>
+                                      <img src="images\blog\atom-git-file-compare.png" alt="Compare and stage your file changes using Atom editor with Git Hub" style="width: 700px;left: 3%;position: relative;">
+                                      <p><i><strong>but wait</strong>, <b>how do I import my project in Atom</b></i>, don't worry, its pretty self-explanatory from the interface, I know you will figure out.<br>
+                                      <i>Get to know more on Atom editor features you will <strong>obviously </strong>need@</i><a style="margin: 0;display: inline;text-decoration: underline;color: #e4681f;background: none;" target="_blank" href="http://flight-manual.atom.io/getting-started/sections/atom-basics/">Atom Flight Manual</a></p>
+                                      <p>The operations of taking a <strong>pull</strong> from GitHub, <strong>commiting &  pushing</strong> your code to remote repository is real easy and <strong>quick now.</strong></p>
+                                      <img src="images\blog\atom-github-operations.gif" alt="commit , push & pull operations using Atom editor for GitHub" style="width: 700px;left: 3%;position: relative;"><p style="padding-top: 0;padding-bottom: 0;
+    margin-bottom: 0;font-size: 0.5em;padding-left: 3em;"><i>Image courtesy:http://madoxweb.com/wp-content/plugins/RSSPoster_PRO/cache/3b9b3_atom-github-operations.gif</i></p>
+    <p><i>Know more on GitHub operations using Atom@</i><a style="margin: 0;display: inline;text-decoration: underline;color: #e4681f;background: none;" target="_blank" href="https://github.atom.io/">Introducing GitHub for Atom</a></p>
+    <p>With your beautiful piece of code developed on an amazing professional environment, now it's finally time to give your work a great yet economical platform. <strong>No</strong>, we are not going to buy a hosting account.</p><p>We are gonna use GitHub again, introducing </p>
+    <img src="images\blog\github-pages.JPG" alt="How to publish project using github pages" style="width: 700px;left: 3%;position: relative;"><p style="padding-top: 0;padding-bottom: 0;
+margin-bottom: 0;font-size: 0.5em;padding-left: 3em;">
+<p><strong>GitHub Pages</strong> is a very convenient way of <strong>showcasing</strong> your projects to the world. Follow the below steps and you'll have a webspace of your own in no time.</p>
+<ul>
+  <li class="shift-cell">Go to the <strong>   <i>settings</i></strong> option in your repository and select from source dropdown the branch you want to publish for your <strong>first gitHub page</strong>.
+  Remember if you tend to have multible branches for your project, the code in the master repository will get published in default fashion.</li><br>
+  <img src="images\blog\repo-settings@2x.png" alt="How to publish project using github pages" style="width: 700px;left: 3%;position: relative;">
+  <img src="images\blog\launch-theme-chooser@2x.png" alt="How to publish project using github pages" style="width: 700px;left: 3%;position: relative;"><br>
+  <li class="shift-cell">Once you have made the selection, you will have a domain assigned to your project as in below snapshot , which you can across, to display the great amount of effort you had put in your project.</li><br>
+  <img src="images\blog\github-page-url.JPG" alt="How to publish project using github pages" style="width: 700px;left: 3%;position: relative;">
+</ul>
+<p>GitHub is a powerful community with some real sophisticated features, as you progress in your development journey you will find a need for more.<i> Comprehensive documentation to harness the full potential of gitHub pages@</i><a style="margin: 0;display: inline;text-decoration: underline;color: #e4681f;background: none;" target="_blank" href="https://pages.github.com/">Websites for you and your projects.</a></p>
+<p>With all these tools and platform at your disposal, bring up all your ideas to the world and grow stronger.
+<strong>Wish you a great start.</strong></p>
+<p><b>"Don't just dream success, train for it !"</b></p>
+<p>Hope you must have got to learn something from the article.<br><strong>Liked the content ?</strong></p>
                               </div>
-
+                              <div class="sharethis-inline-share-buttons"></div>
 
 
                           </div>
@@ -221,8 +248,9 @@
                                 <div class="member-photo">
                                    <img style="border-radius: 10%;width: 190px;margin:auto;border:2px solid #e4681f" class="img-responsive" src="images\blog\himanshuSaraswat.jpg" alt="Himanshu Saraswat Lead Web Developer @digisquire.co">
                                    <h2 class="blogger-details">Himanshu Saraswat</h2>
-                                   <P class="about-blogger">An intutive & insightful designer who loves to architect people's visions to life.
+                                   <P class="about-blogger">An intutive & insightful tech-enthusiast who loves to architect people's visions to life.
                                    </P>
+                                   <!-- <p>Have any question or need help starting your web development journey.<br>Lets Connect :</p> -->
                                 </div>
                              </div>
                           </div>
@@ -304,6 +332,8 @@
          </div>
       </footer>
       <!-- Footer End -->
+      <!-- Back to Top Start -->
+      <a href="#" class="scroll-to-top"><i class="fa fa-angle-up"></i></a>
       <!-- All Javascript Plugins change for contact html -->
       <script type="text/javascript" src="js/jquery.min.js"></script>
       <script type="text/javascript" src="js/bocg.js"></script>

@@ -35,7 +35,7 @@
 				  $('#eId').addClass('email-load');
 			}
 		});
-		
+
 		/* Mobile Navigation Hide or Collapse on Click */
 		$(document).on('click', '.navbar-collapse.in', function (e) {
 			if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
@@ -55,6 +55,20 @@
 		    }, 3000);
 		    e.preventDefault();
 		});
+		/* Scroll To Top */
+		$(window).scroll(function () {
+			if ($(this).scrollTop() >= 500) {
+				$('.scroll-to-top').fadeIn();
+			} else {
+				$('.scroll-to-top').fadeOut();
+			}
+		});
+		$('.scroll-to-top').click(function () {
+			$('html, body').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});	
 		/* Google Map */
 		 $('#my-address').gMap({
 		    zoom: 5,
