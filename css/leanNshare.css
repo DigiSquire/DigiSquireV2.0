@@ -720,3 +720,8 @@ pre {
     padding-left: 5em;
   }
 }
+@media (min-width:992px) and (max-width: 1199px){
+    .col-md-3, .col-sm-5{
+      padding: 0;
+    }
+}
