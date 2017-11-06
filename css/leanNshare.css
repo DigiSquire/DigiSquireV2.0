@@ -644,10 +644,10 @@ a:hover {
     z-index: 94034;
 }
 .scale a{
-  -webkit-transition: all 0.6s ease 0s;
-  -moz-transition: all 0.6s ease 0s;
-  -o-transition: all 0.6s ease 0s;
-  transition: all 0.6s;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s;
 }
 .scale a:hover{
   -webkit-transform: scale(1.2);
