@@ -659,6 +659,10 @@ a:hover {
   border-bottom-left-radius: 0;
 border-top-left-radius: 20px;
 }
+.scale a:focus{
+  outline: none;
+  color: #fff;
+}
 .link-share-txt{
   display: block;
   padding-top: 0.19em;
