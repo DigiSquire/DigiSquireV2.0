@@ -761,9 +761,17 @@ pre {
     width: 700px;
     padding-left: 5em;
   }
+  .atom-desk-res{
+    width: 600px;
+    margin-left: 6.5em;
+  }
 }
 @media (min-width:992px) and (max-width: 1199px){
     .col-md-3, .col-sm-5{
       padding: 0;
+    }
+    .atom-desk-res{
+      width: 600px;
+      margin-left: 2.5em;
     }
 }
