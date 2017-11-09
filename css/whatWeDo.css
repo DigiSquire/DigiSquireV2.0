@@ -449,3 +449,15 @@ transition: all 0.3s ease-in-out;
 .social-icon li a:hover .fa-linkedin {
 	color: #006DC0;
 }
+.agile, .angular, .bootstrap1, .css3, .devops, .HTML5, .msdax, .zoho
+{display:inline-block; overflow:hidden; background-repeat: no-repeat;
+background-image:url(../images/bg/our-capabilities.png);}
+
+.agile {width:150px; height:118px; background-position:92.6773% 12.6904%; background-size:629.667%; }
+.angular {width:130px; height:130px; background-position:35.2349% 13.0890%; background-size:706.692%; }
+.bootstrap1 {width:258px; height:119px; background-position:6.52742% 60.5598%; background-size:353.899%; }
+.css3 {width:90px; height:126px; background-position:52.9979% 12.9534%; background-size:990.78%; }
+.devops {width:323px; height:110px; background-position:51.0699% 59.2040%; background-size:272.028%; }
+.HTML5 {width:125px; height:125px; background-position:70.6340% 12.9199%; background-size:714.2%; }
+.msdax {width:215px; height:138px; background-position:6.18047% 13.3690%; background-size:470.279%; }
+.zoho {width:198px; height:70px; background-position:88.4988% 53.8462%; background-size:517.172%; }
