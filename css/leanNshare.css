@@ -723,6 +723,7 @@ a:hover {
 @media only screen and (min-width: 700px) {
  pre {
   margin: 1em 4em;
+  border-left: 3px solid #e4681f;
  }
  .img-align-snap {
   width: 100%;
