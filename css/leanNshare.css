@@ -13,6 +13,9 @@ body {
 .padding-top {
  padding-top: 90px;
 }
+.row{
+  margin-right: 0;
+}
 .post-thumb .blog-title-img {
  height: 490px;
  width: 100%;
@@ -120,6 +123,9 @@ img {
  line-height: 1.4em;
  font-size: 0.9em;
 }
+.blog-help{
+  font-size: 0.8em;line-height: 1.35em;text-align:center;
+}
 .sidebar h3 {
  color: #404040;
  text-align: center;
@@ -226,7 +232,7 @@ img {
 }
 .sidebar-item .media .media-body p {
  color: #b4b4b4;
- font-size: 0.6em;
+ font-size: 0.55em;
  line-height: 2.5em;
  margin: 0;
 }
