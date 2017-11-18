@@ -716,6 +716,7 @@ a:hover {
  pre {
   margin-left: 1em;
   margin-right: 1em;
+  border-left: 3px solid #e4681f;
  }
  .col-md-9, .col-sm-7, .col-xs-12, .col-sm-5, .col-md-3 {
   padding-right: 0;
