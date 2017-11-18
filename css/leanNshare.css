@@ -648,12 +648,23 @@ a:hover {
  font-size: 0.6em;
  font-family: 'Poppins', sans-serif;
 }
+.picture-padding{
+  padding: 0 3em;
+}
+.picture-align-1-1{
+  max-width: 340px;
+  max-height: 427px;
+  left: 2%;
+}
 /* sm */
 
 @media only screen and (max-width: 992px) {
  .nav.navbar-nav.post-nav li {
   display: inline-block;
   margin-right: 15px;
+ }
+ .picture-align-1-2{
+   padding: 1.6em;
  }
 }
 /* xs */
@@ -712,6 +723,17 @@ a:hover {
  .fa-lg {
   font-size: 1.4em;
  }
+ .picture-align-1-1{
+   max-height:427px;
+   max-width: 368px;
+   left: 2%;
+   padding: 1em;
+ }
+ .picture-align-1-2{
+   max-width: 525px;
+   max-height: 600px;
+   padding: 1.6em;
+ }
 }
 @media only screen and (max-width: 400px) {
  .chrome-align {
@@ -750,6 +772,8 @@ a:hover {
   width: 600px;
   margin-left: 6.5em;
  }
+
+
 }
 @media (min-width:992px) and (max-width: 1199px) {
  .col-md-3, .col-sm-5 {
