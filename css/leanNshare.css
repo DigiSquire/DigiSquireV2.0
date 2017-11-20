@@ -68,6 +68,18 @@ img {
  background: url(../images/blog/top-bg.png) no-repeat scroll 0% 0% / 300px auto transparent;
  z-index: 1;
 }
+.hexagon {
+ position: absolute;
+ top: -42px;
+ left: 0;
+ right: 0;
+ margin: auto;
+ width: 70px;
+ height: 80px;
+ border-radius: 1em/0.8em;
+ background: url(../images/blog/top-bg.png) no-repeat scroll 0% 0% / 300px auto transparent;
+ z-index: 1;
+}
 .hexagon i {
  color: #ffffff;
  font-size: 30px;
@@ -418,16 +430,6 @@ Blog with right sidebar
  border-bottom: 1px solid #eeeeee;
  padding-top: 10px;
  padding-bottom: 10px;
-}
-.single-blog .post-overlay span {
- left: 0;
- top: 0;
- margin-left: 0;
- width: 94px;
- height: 140px;
- background: url(../images/blog/blog-arrow.png);
- -webkit-animation: fadeInLeft 400ms;
- animation: fadeInLeft 400ms;
 }
 .single-blog .post-overlay span a {
  margin-left: 8px;
