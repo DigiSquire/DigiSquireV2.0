@@ -405,10 +405,12 @@ a.block-link:hover {
  width: 34px;
  height: 34px;
  padding: 6px;
- color: #fff;
  text-align: center;
  box-shadow: 0px 4px 1px 0px rgb(2, 39, 55);
  border-radius: 50%;
+}
+.contact-shape-inner i {
+ color: #ffffff;
 }
 .contact-shape-inner i:hover {
  transform: scale(1.2);
