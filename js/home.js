@@ -10,8 +10,7 @@
    1. Preloader
    2. Script for contact-us page css
    3. Script to Activate the Carousel
-   4. Mobile Navigation Hide or Collapse on Click
-   5. Google Map
+   4. Google Map
 */
 
 (function ($) {
@@ -35,18 +34,6 @@
 				  $('#eId').addClass('email-load');
 			}
 		});
-
-		/* Mobile Navigation Hide or Collapse on Click */
-		$(document).on('click', '.navbar-collapse.in', function (e) {
-			if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
-				$(this).collapse('hide');
-			}
-		});
-		$('body').scrollspy({
-			target: '.navbar-collapse',
-			offset: 195
-
-		});
 		/* Smooth Scroll */
 		$('a.smoth-scroll').on("click", function (e) {
 		    var anchor = $(this);
@@ -68,7 +55,7 @@
 				scrollTop: 0
 			}, 800);
 			return false;
-		});	
+		});
 		/* Google Map */
 		 $('#my-address').gMap({
 		    zoom: 5,
@@ -82,8 +69,6 @@
 		    }
 		    ]
 		    });
-
-
 	});
 
 })(jQuery);
