@@ -339,7 +339,7 @@
          </div>
       </div>
       <!--//Openings-->
-      <iframe src="https://DigiSquire.github.io/chatbot/" width="350" height="430" style="position:fixed;bottom: 0em;right:0;z-index: 999;"></iframe>
+      <!-- <iframe src="https://DigiSquire.github.io/chatbot/" width="350" height="430" style="position:fixed;bottom: 0;right:0;z-index: 999;"></iframe> -->
       <footer class="footer-section">
          <div class="container">
             <div class="row" style="padding-bottom: 0.3em;">
@@ -406,6 +406,22 @@
          fit: true
          });
          });
+
+      </script>
+      <script type="text/javascript">
+      (function () {
+  var div = document.createElement("div");
+  document.getElementsByTagName('body')[0].appendChild(div);
+  div.outerHTML = "<div id='botDiv' style='height: 82px; position: fixed; bottom: 0; z-index: 1000;right:0; background-color: #fff'><div id='botTitleBar' style='height: 82px; width: 350px; position:fixed; cursor: pointer;'></div><iframe width='350px' height='430px' src='https://DigiSquire.github.io/chatbot/' style='right:0;'></iframe></div>";
+
+  document.querySelector('body').addEventListener('click', function (e) {
+      e.target.matches = e.target.matches || e.target.msMatchesSelector;
+      if (e.target.matches('#botTitleBar')) {
+          var botDiv = document.querySelector('#botDiv');
+          botDiv.style.height = botDiv.style.height == '430px' ? '82px' : '430px';
+      };
+  });
+}());
       </script>
       <!-- script for responsive tabs -->
       <!-- Main Javascript File  -->
