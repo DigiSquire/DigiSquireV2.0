@@ -495,6 +495,12 @@ a.block-link:hover {
  .block-head-border {
   display: none;
  }
+ .pd-tp {
+    padding-top: 13%;
+}
+ .pd-tp-1{
+   padding-top: 0;
+ }
 }
 @media only screen and (min-width:396px) and (max-width: 767px) {
  .map-pd {
@@ -513,7 +519,10 @@ a.block-link:hover {
   top: 138px;
  }
  .pd-tp {
-  padding-top: 50%
+  padding-top: 38%
+ }
+ .pd-tp-1 {
+  padding-top: 12%;
  }
 }
 @media only screen and (max-width: 396px) {
@@ -561,6 +570,14 @@ a.block-link:hover {
  .contact-heading {
   padding-left: 2em;
  }
+ .map-pd{
+   padding-left: 12em;
+   padding-top: 1.5em;
+ }
+ .loc-pin-pos {
+    left: 483px;
+    top: 137px;
+}
 }
 /* above 991px */
 
@@ -589,8 +606,14 @@ a.block-link:hover {
  .block-head-border {
   left: 4%;
  }
+ .block-content-0 {
+  padding-left: 5.5em;
+ }
  .block-head-border-s3 {
   left: 8%;
+ }
+ .pd-tp-1{
+   padding-top: 16%;
  }
  .row {
   margin-right: 0;
