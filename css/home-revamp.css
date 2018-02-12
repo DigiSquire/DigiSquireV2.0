@@ -95,10 +95,14 @@ h1, h2 {
 /* banner */
 
 #landing-page {
- background: url('../images/home/landing-page.jpg') 20% 20% / cover no-repeat;
- height: 100%;
+ background-image: linear-gradient(to right, #0d1321 0%, #011e2a 100%);
+ height: 100vh;
  min-width: calc(100%);
  position: relative;
+}
+canvas{
+  top: 0;
+  position: absolute;
 }
 .banner-content-layout {
  margin-bottom: auto;
