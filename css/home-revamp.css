@@ -100,9 +100,9 @@ h1, h2 {
  min-width: calc(100%);
  position: relative;
 }
-canvas{
-  top: 0;
-  position: absolute;
+canvas {
+ top: 0;
+ position: absolute;
 }
 .banner-content-layout {
  margin-bottom: auto;
@@ -157,12 +157,16 @@ canvas{
  background-color: #2e3740;
  border-radius: 50%;
 }
+.social-icons {
+ position: relative;
+ padding-top: 0.71em;
+}
 .social-shape {
  width: 45px;
  border-radius: 50%;
  height: 45px;
  padding: 8px;
- bottom: -10px;
+ bottom: 0;
  position: absolute;
  background-color: #0c1421;
  left: 3em;
@@ -182,11 +186,15 @@ canvas{
 .social-shape-inner i:hover {
  transform: scale(1.2);
 }
+.social-icons-footer {
+ position: relative;
+ z-index: 2;
+}
 .social-shape-foot {
- bottom: 53px;
+ bottom: -13px;
  position: absolute;
  background-color: #f1f2f2;
- left: 4.4em;
+ left: 3em;
 }
 .social-shape-foot-inner {
  bottom: 46px;
@@ -503,10 +511,10 @@ a.block-link:hover {
   display: none;
  }
  .pd-tp {
-    padding-top: 13%;
-}
- .pd-tp-1{
-   padding-top: 0;
+  padding-top: 13%;
+ }
+ .pd-tp-1 {
+  padding-top: 0;
  }
 }
 @media only screen and (min-width:396px) and (max-width: 767px) {
@@ -577,14 +585,14 @@ a.block-link:hover {
  .contact-heading {
   padding-left: 2em;
  }
- .map-pd{
-   padding-left: 12em;
-   padding-top: 1.5em;
+ .map-pd {
+  padding-left: 12em;
+  padding-top: 1.5em;
  }
  .loc-pin-pos {
-    left: 483px;
-    top: 137px;
-}
+  left: 483px;
+  top: 137px;
+ }
 }
 /* above 991px */
 
@@ -619,8 +627,8 @@ a.block-link:hover {
  .block-head-border-s3 {
   left: 8%;
  }
- .pd-tp-1{
-   padding-top: 16%;
+ .pd-tp-1 {
+  padding-top: 16%;
  }
  .row {
   margin-right: 0;
