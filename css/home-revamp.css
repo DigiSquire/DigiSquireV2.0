@@ -302,6 +302,137 @@ a.block-link:hover {
 .pd-bt {
  padding-bottom: 5%;
 }
+
+   .mag-background {
+    visibility: visible;
+    -webkit-transform: translateY(0) scale(1);
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out 0s, opacity 0.5s ease-in-out 0s;
+    transition: transform 0.5s ease-in-out 0s, opacity 0.5s ease-in-out 0s;
+    background: #2e3740eb;
+    ;
+   }
+
+   .news-marquee {
+    overflow: hidden;
+    position: relative;
+    padding-left: 10rem;
+    z-index: 1;
+   }
+
+   .news-marquee-stories-container {
+    width: 680vw;
+    transform: translateX(100%);
+    animation: marquee-scroll 80s linear infinite;
+   }
+
+   .news-marquee-stories {
+    list-style: none;
+    display: table-cell;
+    white-space: nowrap;
+   }
+
+   .news-marquee-stories-container:hover {
+    animation-play-state: paused !important;
+   }
+
+   .news-marquee-stories li {
+    display: inline;
+    margin-left: 0;
+    padding-left: 3em;
+   }
+
+   .news-marquee-stories li a:hover {
+    text-decoration: none;
+   }
+
+   .news-marquee-stories li a:hover span {
+    text-decoration: underline;
+    color: white;
+   }
+
+   .news-marquee-stories li:before {
+    content: "";
+   }
+
+   .news-marquee-stories li a span:after {
+    content: " >";
+    color: #e4681f;
+    display: inline-block;
+    padding-left: 0.5em;
+   }
+   .news-marquee-stories {
+    line-height: 5.5rem;
+   }
+   @keyframes marquee-scroll {
+    0% {
+     transform: translateX(0);
+    }
+    100% {
+     transform: translateX(-50%);
+    }
+   }
+   .text {
+    color: #fff;
+    font-size: 14px;
+   }
+   .digitalist {
+    background: url(../images/bg/digitalist.svg) no-repeat;
+    background-size: 10%;
+    background-position-x: 0;
+    background-position-y: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.4em;
+   }
+   .pd-mgc-1 {
+    padding-left: 8.5em;
+   }
+   .cio {
+    background: url(../images/bg/cio_logo.svg) no-repeat;
+    background-size: 6%;
+    background-position-x: 0;
+    background-position-y: 0;
+    padding: 0.5em 0;
+    padding-bottom: 1em;
+   }
+   .pd-mgc-2 {
+    padding-left: 4.5em;
+   }
+   .cap {
+    background: url(../images/bg/logo_cc.svg) no-repeat;
+    background-size: 21%;
+    background-position-x: 0;
+    background-position-y: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.2em;
+   }
+   .pd-mgc-3 {
+    padding-left: 16em;
+   }
+   .deloitte {
+    background: url(../images/bg/deloitte.svg) no-repeat;
+    background-size: 8.5%;
+    background-position-x: 0;
+    background-position-y: 60%;
+    padding-top: 0.5em;
+    padding-bottom: 0.2em;
+   }
+   .pd-mgc-4 {
+    padding-left: 9em;
+   }
+   .ms {
+    background: url(../images/bg/microsoftr.png) no-repeat;
+    background-size: 13%;
+    background-position-x: 0;
+    background-position-y: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.4em;
+   }
+   .pd-mgc-5 {
+    padding-left: 8.5em;
+   }
 .contact-section {
  min-width: calc(99.7%);
  height: 535px;
@@ -516,6 +647,9 @@ a.block-link:hover {
  .pd-tp-1 {
   padding-top: 0;
  }
+ .news-marquee-stories-container {
+  width: 2800vw;
+ }
 }
 @media only screen and (min-width:396px) and (max-width: 767px) {
  .map-pd {
@@ -593,6 +727,9 @@ a.block-link:hover {
   left: 483px;
   top: 137px;
  }
+ .news-marquee-stories-container {
+  width: 1400vw;
+ }
 }
 /* above 991px */
 
@@ -615,6 +752,9 @@ a.block-link:hover {
  }
  .row {
   margin-right: 0;
+ }
+ .news-marquee-stories-container {
+  width: 1400vw;
  }
 }
 @media only screen and (min-width: 1201px) {
