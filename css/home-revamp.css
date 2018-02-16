@@ -618,7 +618,7 @@ a.block-link:hover {
   padding-bottom: 11%;
  }
  .contact-section {
-  min-height: calc(112%);
+  height: auto;
  }
  .contact-heading {
   font-size: 1.3em;
@@ -648,7 +648,7 @@ a.block-link:hover {
   padding-top: 0;
  }
  .news-marquee-stories-container {
-  width: 3000vw;
+  width: 2540vw;
  }
 }
 @media only screen and (min-width:396px) and (max-width: 767px) {
@@ -704,7 +704,7 @@ a.block-link:hover {
   padding-top: 33%;
  }
  .contact-section {
-  height: 100vh;
+  height: auto;
  }
  .row {
   margin-right: 0;
