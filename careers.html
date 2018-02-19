@@ -378,7 +378,7 @@
       </footer>
       <!--/#footer-->
       <!-- Back to Top Start -->
-      <a href="#" class="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+      <!-- <a href="#" class="scroll-to-top"><i class="fa fa-angle-up"></i></a> -->
       <!-- Back to Top End -->
       <!-- All Javascript Plugins  -->
       <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -412,7 +412,7 @@
       (function () {
   var div = document.createElement("div");
   document.getElementsByTagName('body')[0].appendChild(div);
-  div.outerHTML = "<div id='botDiv' style='height: 82px; position: fixed; bottom: 0; z-index: 1000;right:0; background-color: #fff'><div id='botTitleBar' style='height: 82px; width: 350px; position:fixed; cursor: pointer;'></div><iframe width='350px' height='430px' src='https://DigiSquire.github.io/chatbot/' style='right:0;'></iframe></div>";
+  div.outerHTML = "<div id='botDiv' style='height: 82px; position: fixed; bottom: 0; z-index: 1000;right:0; background-color: #fff'><div id='botTitleBar' style='height: 82px; width: 350px; position:fixed; cursor: pointer;'></div><iframe width='350px' height='430px' src='https://DigiSquire.github.io/chatbot/' style='right:0;box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);border-color: transparent;border-width: 0px;'></iframe></div>";
 
   document.querySelector('body').addEventListener('click', function (e) {
       e.target.matches = e.target.matches || e.target.msMatchesSelector;
